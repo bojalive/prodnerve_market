@@ -4,10 +4,10 @@ import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 const TEST_RESULTS = [
   { serial: 'EG-4022-CBE', test: 'Rotation Check', spec: 'Free rotation, no binding', actual: 'Smooth', station: 'Stn 3', tester: 'Karthik V', time: '23 Mar 14:20', result: 'Pass' },
   { serial: 'EG-4022-CBE', test: 'Leak Test (Low Pressure)', spec: '\u2264 0.5 cc/min @ 3 bar', actual: '0.2 cc/min', station: 'Stn 5', tester: 'Deepak N', time: '23 Mar 13:50', result: 'Pass' },
-  { serial: 'EG-4022-CBE', test: 'Electrical Continuity', spec: 'Resistance < 0.5\u03A9', actual: '0.3\u03A9', station: 'Stn 4', tester: 'Vijay P', time: '23 Mar 13:30', result: 'Pass' },
-  { serial: 'AB-3018-HSR', test: 'Scroll Clearance', spec: '0.05-0.08 mm', actual: '0.06 mm', station: 'Stn 7', tester: 'Manoj R', time: '23 Mar 13:10', result: 'Pass' },
+  { serial: 'EG-4022-CBE', test: 'Electrical Continuity', spec: 'Resistance < 0.5\u03A9', actual: '0.3\u03A9', station: 'Stn 4', tester: 'Steve P', time: '23 Mar 13:30', result: 'Pass' },
+  { serial: 'AB-3018-HSR', test: 'Scroll Clearance', spec: '0.05-0.08 mm', actual: '0.06 mm', station: 'Stn 7', tester: 'Marcus R', time: '23 Mar 13:10', result: 'Pass' },
   { serial: 'AB-3018-HSR', test: 'Oil Circuit Flow', spec: '\u2265 2 L/min @ 2 bar', actual: '2.4 L/min', station: 'Stn 8', tester: 'Ganesh T', time: '23 Mar 12:40', result: 'Pass' },
-  { serial: 'TS-1055-PNE', test: 'Compression Check', spec: '\u2265 6.5 bar', actual: '6.2 bar', station: 'Stn 12', tester: 'Kumar S', time: '23 Mar 12:15', result: 'Fail' },
+  { serial: 'TS-1055-PNE', test: 'Compression Check', spec: '\u2265 6.5 bar', actual: '6.2 bar', station: 'Stn 12', tester: 'Kelly S', time: '23 Mar 12:15', result: 'Fail' },
   { serial: 'TS-1055-PNE', test: 'Piston Ring Gap', spec: '0.25-0.45 mm', actual: '0.32 mm', station: 'Stn 11', tester: 'Ramesh P', time: '23 Mar 11:50', result: 'Pass' },
   { serial: 'VSD-6014-JMP', test: 'VFD Output Check', spec: '380-420V, 50Hz', actual: '400V/50Hz', station: 'Stn 10', tester: 'Senthil K', time: '23 Mar 11:30', result: 'Pass' },
 ];

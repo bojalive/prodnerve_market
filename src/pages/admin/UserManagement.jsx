@@ -2,21 +2,21 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const USERS = [
-  { id: 'USR-001', name: 'Rajesh Kumar', email: 'rajesh.k@company.com', role: 'Super Admin', plant: 'All', dept: 'IT', lastLogin: '23 Mar 14:22', status: 'Active' },
-  { id: 'USR-002', name: 'Suresh Menon', email: 'suresh.m@company.com', role: 'Plant Head', plant: 'Coimbatore', dept: 'Operations', lastLogin: '23 Mar 13:45', status: 'Active' },
+  { id: 'USR-001', name: 'Rajesh Kelly', email: 'rajesh.k@company.com', role: 'Super Admin', plant: 'All', dept: 'IT', lastLogin: '23 Mar 14:22', status: 'Active' },
+  { id: 'USR-002', name: 'Scott Menon', email: 'suresh.m@company.com', role: 'Plant Head', plant: 'Shawano', dept: 'Operations', lastLogin: '23 Mar 13:45', status: 'Active' },
   { id: 'USR-003', name: 'Priya Sharma', email: 'priya.s@company.com', role: 'Plant Head', plant: 'Hosur', dept: 'Operations', lastLogin: '23 Mar 12:30', status: 'Active' },
-  { id: 'USR-004', name: 'Karthik Venkatesh', email: 'karthik.v@company.com', role: 'Production Mgr', plant: 'Coimbatore', dept: 'Production', lastLogin: '23 Mar 14:10', status: 'Active' },
-  { id: 'USR-005', name: 'Anand Subramanian', email: 'anand.s@company.com', role: 'Quality Mgr', plant: 'Coimbatore', dept: 'Quality', lastLogin: '23 Mar 11:20', status: 'Active' },
+  { id: 'USR-004', name: 'Karthik Venkatesh', email: 'karthik.v@company.com', role: 'Production Mgr', plant: 'Shawano', dept: 'Production', lastLogin: '23 Mar 14:10', status: 'Active' },
+  { id: 'USR-005', name: 'Andrew Subramanian', email: 'anand.s@company.com', role: 'Quality Mgr', plant: 'Shawano', dept: 'Quality', lastLogin: '23 Mar 11:20', status: 'Active' },
   { id: 'USR-006', name: 'Deepak Nair', email: 'deepak.n@company.com', role: 'Maintenance Mgr', plant: 'Pune', dept: 'Maintenance', lastLogin: '22 Mar 16:45', status: 'Active' },
-  { id: 'USR-007', name: 'Ravi Krishnan', email: 'ravi.k@company.com', role: 'Supervisor', plant: 'Coimbatore', dept: 'CNC', lastLogin: '23 Mar 14:00', status: 'Active' },
+  { id: 'USR-007', name: 'Mike Rrishnan', email: 'ravi.k@company.com', role: 'Supervisor', plant: 'Shawano', dept: 'CNC', lastLogin: '23 Mar 14:00', status: 'Active' },
   { id: 'USR-008', name: 'Meena Iyer', email: 'meena.i@company.com', role: 'Planner', plant: 'Hosur', dept: 'Planning', lastLogin: '23 Mar 09:30', status: 'Active' },
-  { id: 'USR-009', name: 'Ganesh Thiagarajan', email: 'ganesh.t@company.com', role: 'Supervisor', plant: 'Coimbatore', dept: 'Maintenance', lastLogin: '23 Mar 13:00', status: 'Active' },
-  { id: 'USR-010', name: 'Vijay Prakash', email: 'vijay.p@company.com', role: 'Operator', plant: 'Coimbatore', dept: 'Assembly', lastLogin: '23 Mar 06:05', status: 'Active' },
+  { id: 'USR-009', name: 'Ganesh Thiagarajan', email: 'ganesh.t@company.com', role: 'Supervisor', plant: 'Shawano', dept: 'Maintenance', lastLogin: '23 Mar 13:00', status: 'Active' },
+  { id: 'USR-010', name: 'Steve Patrick', email: 'vijay.p@company.com', role: 'Operator', plant: 'Shawano', dept: 'Assembly', lastLogin: '23 Mar 06:05', status: 'Active' },
   { id: 'USR-011', name: 'Lakshmi Devi', email: 'lakshmi.d@company.com', role: 'Quality Inspector', plant: 'Pune', dept: 'Quality', lastLogin: '22 Mar 14:20', status: 'Active' },
   { id: 'USR-012', name: 'Mohan Raj', email: 'mohan.r@company.com', role: 'Store Keeper', plant: 'Ahmedabad', dept: 'Stores', lastLogin: '23 Mar 10:15', status: 'Active' },
   { id: 'USR-013', name: 'Sundar Raman', email: 'sundar.r@company.com', role: 'HR Manager', plant: 'All', dept: 'HR', lastLogin: '23 Mar 08:45', status: 'Active' },
   { id: 'USR-014', name: 'Arun Prasad', email: 'arun.p@company.com', role: 'Test Engineer', plant: 'Jamshedpur', dept: 'Testing', lastLogin: '21 Mar 15:30', status: 'Inactive' },
-  { id: 'USR-015', name: 'Senthil Murugan', email: 'senthil.m@company.com', role: 'Plant Head', plant: 'Ahmedabad', dept: 'Operations', lastLogin: '23 Mar 11:00', status: 'Active' },
+  { id: 'USR-015', name: 'Senthil Mason', email: 'senthil.m@company.com', role: 'Plant Head', plant: 'Ahmedabad', dept: 'Operations', lastLogin: '23 Mar 11:00', status: 'Active' },
 ];
 
 const STATUS_COLOR = { Active: 'green', Inactive: 'gray', Locked: 'red' };

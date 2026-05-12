@@ -61,7 +61,7 @@ export function getStatusColor(status) {
 }
 
 /**
- * Get initials from a full name (e.g. "Rajesh Chandran" -> "RC").
+ * Get initials from a full name (e.g. "Robert Chandran" -> "RC").
  */
 export function getInitials(name) {
   if (!name) return '??';

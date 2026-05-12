@@ -3,13 +3,13 @@ import { MI, KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../co
 
 const SPARE_REQUESTS = [
   { id: 'SR-4001', part: 'Spindle Bearing 7210-BEP', partNo: 'SKF-7210-BEP', machine: 'CNC-A06', qty: 2, estCost: '14,200', requester: 'Ganesh T', reqDate: '23 Mar 2026', need: 'Urgent', vendor: 'SKF India', status: 'Approved' },
-  { id: 'SR-4002', part: 'Hydraulic Pump Seal Kit', partNo: 'HPS-TST-E02', machine: 'TST-E02', qty: 1, estCost: '3,800', requester: 'Prakash D', reqDate: '23 Mar 2026', need: 'Urgent', vendor: 'Parker Hannifin', status: 'Ordered' },
-  { id: 'SR-4003', part: 'Pneumatic Cylinder 50x100', partNo: 'SMC-CQ2B50-100', machine: 'CNC-A02', qty: 1, estCost: '8,400', requester: 'Manoj R', reqDate: '22 Mar 2026', need: 'Normal', vendor: 'SMC India', status: 'Received' },
-  { id: 'SR-4004', part: 'Spray Gun Nozzle 1.4mm', partNo: 'SGN-SATA-1.4', machine: 'PNT-F01', qty: 3, estCost: '2,100', requester: 'Manoj R', reqDate: '22 Mar 2026', need: 'Normal', vendor: 'SATA India', status: 'Received' },
+  { id: 'SR-4002', part: 'Hydraulic Pump Seal Kit', partNo: 'HPS-TST-E02', machine: 'TST-E02', qty: 1, estCost: '3,800', requester: 'Patrick D', reqDate: '23 Mar 2026', need: 'Urgent', vendor: 'Parker Hannifin', status: 'Ordered' },
+  { id: 'SR-4003', part: 'Pneumatic Cylinder 50x100', partNo: 'SMC-CQ2B50-100', machine: 'CNC-A02', qty: 1, estCost: '8,400', requester: 'Marcus R', reqDate: '22 Mar 2026', need: 'Normal', vendor: 'SMC India', status: 'Received' },
+  { id: 'SR-4004', part: 'Spray Gun Nozzle 1.4mm', partNo: 'SGN-SATA-1.4', machine: 'PNT-F01', qty: 3, estCost: '2,100', requester: 'Marcus R', reqDate: '22 Mar 2026', need: 'Normal', vendor: 'SATA India', status: 'Received' },
   { id: 'SR-4005', part: 'Coolant Pump Motor 1HP', partNo: 'CPM-1HP-415V', machine: 'GRD-C04', qty: 1, estCost: '12,800', requester: 'Ganesh T', reqDate: '22 Mar 2026', need: 'Urgent', vendor: 'Crompton Greaves', status: 'Ordered' },
-  { id: 'SR-4006', part: 'Guideway Wiper Set', partNo: 'GW-MAZAK-QTN', machine: 'CNC-A02', qty: 1, estCost: '4,600', requester: 'Prakash D', reqDate: '21 Mar 2026', need: 'Normal', vendor: 'Mazak India', status: 'Pending' },
-  { id: 'SR-4007', part: 'Torque Sensor 50Nm', partNo: 'TS-HBM-T22-50', machine: 'ASM-D01', qty: 1, estCost: '42,000', requester: 'Prakash D', reqDate: '21 Mar 2026', need: 'Normal', vendor: 'HBM India', status: 'Pending' },
-  { id: 'SR-4008', part: 'Conveyor Belt 3m', partNo: 'CB-EPP-3000', machine: 'ASM-D03', qty: 1, estCost: '6,200', requester: 'Prakash D', reqDate: '20 Mar 2026', need: 'Normal', vendor: 'Fenner India', status: 'Approved' },
+  { id: 'SR-4006', part: 'Guideway Wiper Set', partNo: 'GW-MAZAK-QTN', machine: 'CNC-A02', qty: 1, estCost: '4,600', requester: 'Patrick D', reqDate: '21 Mar 2026', need: 'Normal', vendor: 'Mazak India', status: 'Pending' },
+  { id: 'SR-4007', part: 'Torque Sensor 50Nm', partNo: 'TS-HBM-T22-50', machine: 'ASM-D01', qty: 1, estCost: '42,000', requester: 'Patrick D', reqDate: '21 Mar 2026', need: 'Normal', vendor: 'HBM India', status: 'Pending' },
+  { id: 'SR-4008', part: 'Conveyor Belt 3m', partNo: 'CB-EPP-3000', machine: 'ASM-D03', qty: 1, estCost: '6,200', requester: 'Patrick D', reqDate: '20 Mar 2026', need: 'Normal', vendor: 'Fenner India', status: 'Approved' },
 ];
 
 const STATUS_COLOR = { Pending: 'amber', Approved: 'accent', Ordered: 'green', Received: 'green', Rejected: 'red' };

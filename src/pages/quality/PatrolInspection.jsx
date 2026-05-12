@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
-const PARTS = ['EG-22 Rotor', 'EG-37 Stator', 'EG-55 Housing', 'AB-50 Cylinder', 'VSD-75 End Cover'];
+const PARTS = ['PA-450 Rotor', 'PA-625 Stator', 'PA-880 Housing', 'AB-50 Cylinder', 'VSD-75 End Cover'];
 const DIMENSIONS = ['Bore ID \u00d872.000', 'OD \u00d8119.950', 'Face Runout 0.015', 'Groove Width 3.200', 'Thread Depth M8x12'];
 
 const MOCK_ROUNDS = [

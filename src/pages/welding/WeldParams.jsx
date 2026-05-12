@@ -4,8 +4,8 @@ import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 const WELD_PASSES = [
   { wo: 'WO-2526-10001', joint: 'Body to End Cover', pass: 'Root', process: 'GTAW', current: 110, voltage: 11.5, speed: 80, heatInput: 0.95, filler: 'ER70S-6 \u00d81.6', gas: 'Ar 99.99%', welder: 'M. Kannan', status: 'OK' },
   { wo: 'WO-2526-10001', joint: 'Body to End Cover', pass: 'Fill 1', process: 'GTAW', current: 140, voltage: 12.8, speed: 95, heatInput: 1.13, filler: 'ER70S-6 \u00d82.4', gas: 'Ar 99.99%', welder: 'M. Kannan', status: 'OK' },
-  { wo: 'WO-2526-10001', joint: 'Body to End Cover', pass: 'Fill 2', process: 'GMAW', current: 180, voltage: 24.5, speed: 120, heatInput: 2.21, filler: 'ER70S-6 \u00d81.2', gas: 'Ar+CO2 80/20', welder: 'R. Selvam', status: 'OK' },
-  { wo: 'WO-2526-10001', joint: 'Body to End Cover', pass: 'Cap', process: 'GMAW', current: 200, voltage: 25.0, speed: 130, heatInput: 2.31, filler: 'ER70S-6 \u00d81.2', gas: 'Ar+CO2 80/20', welder: 'R. Selvam', status: 'OK' },
+  { wo: 'WO-2526-10001', joint: 'Body to End Cover', pass: 'Fill 2', process: 'GMAW', current: 180, voltage: 24.5, speed: 120, heatInput: 2.21, filler: 'ER70S-6 \u00d81.2', gas: 'Ar+CO2 80/20', welder: 'R. Hansen', status: 'OK' },
+  { wo: 'WO-2526-10001', joint: 'Body to End Cover', pass: 'Cap', process: 'GMAW', current: 200, voltage: 25.0, speed: 130, heatInput: 2.31, filler: 'ER70S-6 \u00d81.2', gas: 'Ar+CO2 80/20', welder: 'R. Hansen', status: 'OK' },
   { wo: 'WO-2526-10006', joint: 'Suction Header', pass: 'Root', process: 'GTAW', current: 90, voltage: 10.5, speed: 70, heatInput: 0.81, filler: 'ER308L \u00d81.6', gas: 'Ar 99.99%', welder: 'A. Babu', status: 'OK' },
   { wo: 'WO-2526-10006', joint: 'Suction Header', pass: 'Fill/Cap', process: 'GTAW', current: 120, voltage: 12.0, speed: 85, heatInput: 1.02, filler: 'ER308L \u00d82.4', gas: 'Ar 99.99%', welder: 'A. Babu', status: 'OK' },
   { wo: 'WO-2526-10003', joint: 'Cyl to Crankcase', pass: 'Root', process: 'SMAW', current: 100, voltage: 22.0, speed: 90, heatInput: 1.47, filler: 'ENiFe-CI \u00d83.2', gas: '--', welder: 'V. Rajan', status: 'Warn' },

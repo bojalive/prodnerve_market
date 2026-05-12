@@ -2,18 +2,18 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const STATIONS = [
-  { stn: 1, name: 'Sub-Assembly A', product: 'EG-22', target: 4, actual: 4, takt: 100, operator: 'Ravi K', status: 'On Track' },
-  { stn: 2, name: 'Sub-Assembly B', product: 'EG-22', target: 4, actual: 4, takt: 100, operator: 'Suresh M', status: 'On Track' },
-  { stn: 3, name: 'Rotor Install', product: 'EG-22', target: 4, actual: 3, takt: 88, operator: 'Karthik V', status: 'Behind' },
-  { stn: 4, name: 'Stator Winding', product: 'EG-22', target: 4, actual: 4, takt: 96, operator: 'Vijay P', status: 'On Track' },
-  { stn: 5, name: 'Housing Fit', product: 'EG-22', target: 4, actual: 3, takt: 78, operator: 'Deepak N', status: 'Bottleneck' },
-  { stn: 6, name: 'Bearing Press', product: 'EG-22', target: 4, actual: 4, takt: 95, operator: 'Anand S', status: 'On Track' },
-  { stn: 7, name: 'Shaft Coupling', product: 'AB-30', target: 2, actual: 2, takt: 100, operator: 'Manoj R', status: 'On Track' },
-  { stn: 8, name: 'Oil System', product: 'AB-30', target: 2, actual: 2, takt: 98, operator: 'Ganesh T', status: 'On Track' },
-  { stn: 9, name: 'Cooling Circuit', product: 'AB-30', target: 2, actual: 1, takt: 82, operator: 'Prakash D', status: 'Behind' },
+  { stn: 1, name: 'Sub-Assembly A', product: 'PA-450', target: 4, actual: 4, takt: 100, operator: 'Mike R', status: 'On Track' },
+  { stn: 2, name: 'Sub-Assembly B', product: 'PA-450', target: 4, actual: 4, takt: 100, operator: 'Scott M', status: 'On Track' },
+  { stn: 3, name: 'Rotor Install', product: 'PA-450', target: 4, actual: 3, takt: 88, operator: 'Karthik V', status: 'Behind' },
+  { stn: 4, name: 'Stator Winding', product: 'PA-450', target: 4, actual: 4, takt: 96, operator: 'Steve P', status: 'On Track' },
+  { stn: 5, name: 'Housing Fit', product: 'PA-450', target: 4, actual: 3, takt: 78, operator: 'Deepak N', status: 'Bottleneck' },
+  { stn: 6, name: 'Bearing Press', product: 'PA-450', target: 4, actual: 4, takt: 95, operator: 'Andrew S', status: 'On Track' },
+  { stn: 7, name: 'Shaft Coupling', product: 'HC-500', target: 2, actual: 2, takt: 100, operator: 'Marcus R', status: 'On Track' },
+  { stn: 8, name: 'Oil System', product: 'HC-500', target: 2, actual: 2, takt: 98, operator: 'Ganesh T', status: 'On Track' },
+  { stn: 9, name: 'Cooling Circuit', product: 'HC-500', target: 2, actual: 1, takt: 82, operator: 'Patrick D', status: 'Behind' },
   { stn: 10, name: 'Electrical Panel', product: 'VSD-200', target: 8, actual: 8, takt: 100, operator: 'Senthil K', status: 'On Track' },
-  { stn: 11, name: 'Final Assembly', product: 'TS-5', target: 6, actual: 6, takt: 94, operator: 'Ramesh P', status: 'On Track' },
-  { stn: 12, name: 'Pre-Test Check', product: 'TS-5', target: 6, actual: 5, takt: 90, operator: 'Kumar S', status: 'Behind' },
+  { stn: 11, name: 'Final Assembly', product: 'BR-75', target: 6, actual: 6, takt: 94, operator: 'Ramesh P', status: 'On Track' },
+  { stn: 12, name: 'Pre-Test Check', product: 'BR-75', target: 6, actual: 5, takt: 90, operator: 'Kelly S', status: 'Behind' },
 ];
 
 const STATUS_COLOR = { 'On Track': 'green', Behind: 'amber', Bottleneck: 'red' };

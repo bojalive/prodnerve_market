@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { MI, FormField, SectionLabel } from '../../components/ui';
 
 const PRODUCTS = [
-  'EG-15 Screw Compressor', 'EG-22 Screw Compressor', 'EG-37 Screw Compressor', 'EG-55 Screw Compressor',
-  'AB-7 Oil-Free Compressor', 'AB-15 Oil-Free Compressor', 'AB-30 Oil-Free Compressor',
-  'TS-5 Piston Compressor', 'TS-10 Piston Compressor', 'TS-20 Piston Compressor',
+  'PA-225 Hub Assembly', 'PA-450 Hub Assembly', 'PA-625 Hub Assembly', 'PA-880 Hub Assembly',
+  'HC-100 Hydraulic Cyl Body', 'HC-250 Hydraulic Cyl Body', 'HC-500 Hydraulic Cyl Body',
+  'BR-75 Aerospace Bracket', 'BR-150 Aerospace Bracket', 'BR-300 Aerospace Bracket',
   'VSD-100 Controller', 'VSD-200 Controller',
 ];
-const PLANTS = ['Coimbatore', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
-const ROUTINGS = ['RT-SCR-STD (Screw Standard)', 'RT-SCR-HVY (Screw Heavy Duty)', 'RT-OFR-STD (Oil-Free Standard)', 'RT-PST-STD (Piston Standard)', 'RT-VSD-SMT (VSD Assembly)'];
+const PLANTS = ['Shawano', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
+const ROUTINGS = ['RT-CNC-STD (CNC Mill Standard)', 'RT-CNC-HVY (CNC Mill Heavy Duty)', 'RT-TRN-STD (CNC Turning Standard)', 'RT-GRD-STD (Grinding Standard)', 'RT-FIN-INS (Finishing & Inspection)'];
 const UOMS = ['Nos', 'Sets', 'Kits'];
 const PRIORITIES = ['Low', 'Medium', 'High', 'Critical'];
 

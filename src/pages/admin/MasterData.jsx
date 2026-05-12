@@ -2,13 +2,13 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PRODUCTS = [
-  { code: 'EG-22', name: 'Screw Compressor 22kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '3.2-5.6 m\u00b3/min', weight: '420 kg', bom: 186, price: 'INR 4,85,000', status: 'Active' },
-  { code: 'EG-37', name: 'Screw Compressor 37kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '5.8-8.4 m\u00b3/min', weight: '580 kg', bom: 204, price: 'INR 6,20,000', status: 'Active' },
-  { code: 'EG-55', name: 'Screw Compressor 55kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '8.2-11.8 m\u00b3/min', weight: '720 kg', bom: 228, price: 'INR 8,45,000', status: 'Active' },
-  { code: 'AB-15', name: 'Oil-Free Compressor 15kW', series: 'AB', type: 'Oil-Free Scroll', pressure: '8-10 bar', flow: '1.4-2.2 m\u00b3/min', weight: '280 kg', bom: 142, price: 'INR 6,80,000', status: 'Active' },
-  { code: 'AB-30', name: 'Oil-Free Compressor 30kW', series: 'AB', type: 'Oil-Free Scroll', pressure: '8-10 bar', flow: '2.8-4.2 m\u00b3/min', weight: '380 kg', bom: 168, price: 'INR 9,40,000', status: 'Active' },
-  { code: 'TS-5', name: 'Piston Compressor 5HP', series: 'TS', type: 'Reciprocating Piston', pressure: '8-12 bar', flow: '0.4-0.8 m\u00b3/min', weight: '85 kg', bom: 78, price: 'INR 42,000', status: 'Active' },
-  { code: 'TS-10', name: 'Piston Compressor 10HP', series: 'TS', type: 'Reciprocating Piston', pressure: '8-12 bar', flow: '0.8-1.6 m\u00b3/min', weight: '140 kg', bom: 94, price: 'INR 68,000', status: 'Active' },
+  { code: 'PA-450', name: 'Hub Assembly 22kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '3.2-5.6 m\u00b3/min', weight: '420 kg', bom: 186, price: 'INR 4,85,000', status: 'Active' },
+  { code: 'PA-625', name: 'Hub Assembly 37kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '5.8-8.4 m\u00b3/min', weight: '580 kg', bom: 204, price: 'INR 6,20,000', status: 'Active' },
+  { code: 'PA-880', name: 'Hub Assembly 55kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '8.2-11.8 m\u00b3/min', weight: '720 kg', bom: 228, price: 'INR 8,45,000', status: 'Active' },
+  { code: 'HC-250', name: 'Hydraulic Cyl Body 15kW', series: 'AB', type: 'Precision-Milled Scroll', pressure: '8-10 bar', flow: '1.4-2.2 m\u00b3/min', weight: '280 kg', bom: 142, price: 'INR 6,80,000', status: 'Active' },
+  { code: 'HC-500', name: 'Hydraulic Cyl Body 30kW', series: 'AB', type: 'Precision-Milled Scroll', pressure: '8-10 bar', flow: '2.8-4.2 m\u00b3/min', weight: '380 kg', bom: 168, price: 'INR 9,40,000', status: 'Active' },
+  { code: 'BR-75', name: 'Aerospace Bracket 5HP', series: 'TS', type: 'Reciprocating Piston', pressure: '8-12 bar', flow: '0.4-0.8 m\u00b3/min', weight: '85 kg', bom: 78, price: 'INR 42,000', status: 'Active' },
+  { code: 'BR-150', name: 'Aerospace Bracket 10HP', series: 'TS', type: 'Reciprocating Piston', pressure: '8-12 bar', flow: '0.8-1.6 m\u00b3/min', weight: '140 kg', bom: 94, price: 'INR 68,000', status: 'Active' },
   { code: 'VSD-200', name: 'Variable Speed Controller', series: 'VSD', type: 'VFD Controller', pressure: '--', flow: '--', weight: '12 kg', bom: 48, price: 'INR 1,85,000', status: 'Active' },
 ];
 

@@ -32,7 +32,7 @@ export default function PlantComparison() {
 
       <SectionLabel icon="factory">Plant KPI Matrix ({PLANT_DATA.length} KPIs x 5 plants)</SectionLabel>
       <DataTable
-        headers={['KPI', 'Coimbatore', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur', 'Target']}
+        headers={['KPI', 'Shawano', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur', 'Target']}
         rows={PLANT_DATA.map(p => {
           const vals = [p.coimbatore, p.hosur, p.pune, p.ahmedabad, p.jamshedpur];
           const isLowerBetter = p.kpi.includes('Downtime') || p.kpi.includes('DPPM') || p.kpi.includes('MTTR') || p.kpi.includes('Safety');

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
 const RECENT_ENTRIES = [
-  { id: 'PE-40001', machine: 'CNC-A01', wo: 'WO-2526-10001', product: 'EG-22', good: 18, reject: 1, rework: 0, shift: 'A', operator: 'Ravi K', time: '23 Mar 14:30' },
-  { id: 'PE-40002', machine: 'CNC-A02', wo: 'WO-2526-10003', product: 'TS-5', good: 42, reject: 2, rework: 1, shift: 'A', operator: 'Suresh M', time: '23 Mar 14:15' },
-  { id: 'PE-40003', machine: 'VMC-B01', wo: 'WO-2526-10004', product: 'EG-37', good: 6, reject: 0, rework: 0, shift: 'A', operator: 'Karthik V', time: '23 Mar 13:45' },
-  { id: 'PE-40004', machine: 'GRD-C01', wo: 'WO-2526-10001', product: 'EG-22', good: 14, reject: 0, rework: 1, shift: 'A', operator: 'Vijay P', time: '23 Mar 12:30' },
-  { id: 'PE-40005', machine: 'CNC-A05', wo: 'WO-2526-10007', product: 'TS-10', good: 28, reject: 1, rework: 0, shift: 'A', operator: 'Deepak N', time: '23 Mar 11:20' },
-  { id: 'PE-40006', machine: 'VMC-B02', wo: 'WO-2526-10006', product: 'AB-30', good: 4, reject: 0, rework: 0, shift: 'B', operator: 'Anand S', time: '22 Mar 22:45' },
+  { id: 'PE-40001', machine: 'CNC-A01', wo: 'WO-2526-10001', product: 'PA-450', good: 18, reject: 1, rework: 0, shift: 'A', operator: 'Mike R', time: '23 Mar 14:30' },
+  { id: 'PE-40002', machine: 'CNC-A02', wo: 'WO-2526-10003', product: 'BR-75', good: 42, reject: 2, rework: 1, shift: 'A', operator: 'Scott M', time: '23 Mar 14:15' },
+  { id: 'PE-40003', machine: 'VMC-B01', wo: 'WO-2526-10004', product: 'PA-625', good: 6, reject: 0, rework: 0, shift: 'A', operator: 'Karthik V', time: '23 Mar 13:45' },
+  { id: 'PE-40004', machine: 'GRD-C01', wo: 'WO-2526-10001', product: 'PA-450', good: 14, reject: 0, rework: 1, shift: 'A', operator: 'Steve P', time: '23 Mar 12:30' },
+  { id: 'PE-40005', machine: 'CNC-A05', wo: 'WO-2526-10007', product: 'BR-150', good: 28, reject: 1, rework: 0, shift: 'A', operator: 'Deepak N', time: '23 Mar 11:20' },
+  { id: 'PE-40006', machine: 'VMC-B02', wo: 'WO-2526-10006', product: 'HC-500', good: 4, reject: 0, rework: 0, shift: 'B', operator: 'Andrew S', time: '22 Mar 22:45' },
 ];
 
 export default function ProductionEntry() {
@@ -45,12 +45,12 @@ export default function ProductionEntry() {
           <FormField label="Work Order">
             <select className="form-select" value={form.wo} onChange={e => set('wo', e.target.value)}>
               <option value="">-- Select --</option>
-              <option>WO-2526-10001 (EG-22)</option>
-              <option>WO-2526-10003 (TS-5)</option>
-              <option>WO-2526-10004 (EG-37)</option>
-              <option>WO-2526-10006 (AB-30)</option>
-              <option>WO-2526-10007 (TS-10)</option>
-              <option>WO-2526-10008 (EG-55)</option>
+              <option>WO-2526-10001 (PA-450)</option>
+              <option>WO-2526-10003 (BR-75)</option>
+              <option>WO-2526-10004 (PA-625)</option>
+              <option>WO-2526-10006 (HC-500)</option>
+              <option>WO-2526-10007 (BR-150)</option>
+              <option>WO-2526-10008 (PA-880)</option>
             </select>
           </FormField>
           <FormField label="Good Qty">
