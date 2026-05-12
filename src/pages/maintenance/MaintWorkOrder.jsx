@@ -2,18 +2,18 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const WORK_ORDERS = [
-  { id: 'MWO-9001', type: 'Corrective', machine: 'TST-E02', desc: 'Replace hydraulic pump seal', priority: 'Critical', assigned: 'Patrick D', created: '23 Mar 09:15', due: '23 Mar 18:00', estCost: '12,400', status: 'In Progress' },
-  { id: 'MWO-9002', type: 'Preventive', machine: 'CNC-A01', desc: 'Quarterly spindle bearing inspection', priority: 'High', assigned: 'Greg T', created: '23 Mar 06:00', due: '24 Mar 14:00', estCost: '8,500', status: 'Open' },
-  { id: 'MWO-9003', type: 'Corrective', machine: 'CNC-A02', desc: 'Replace ATC pneumatic cylinder', priority: 'High', assigned: 'Marcus R', created: '22 Mar 16:50', due: '23 Mar 12:00', estCost: '18,200', status: 'Completed' },
-  { id: 'MWO-9004', type: 'Preventive', machine: 'GRD-C01', desc: 'Annual coolant system overhaul', priority: 'Medium', assigned: 'Greg T', created: '22 Mar 08:00', due: '25 Mar 18:00', estCost: '22,600', status: 'Open' },
-  { id: 'MWO-9005', type: 'Improvement', machine: 'ASM-D01', desc: 'Install torque monitoring sensor', priority: 'Medium', assigned: 'Patrick D', created: '21 Mar 10:00', due: '28 Mar 18:00', estCost: '45,000', status: 'Open' },
-  { id: 'MWO-9006', type: 'Corrective', machine: 'PNT-F01', desc: 'Replace spray gun nozzle assembly', priority: 'Low', assigned: 'Marcus R', created: '23 Mar 13:05', due: '24 Mar 10:00', estCost: '3,200', status: 'Completed' },
-  { id: 'MWO-9007', type: 'Preventive', machine: 'VMC-B01', desc: 'Ball screw lubrication and check', priority: 'Medium', assigned: 'Greg T', created: '20 Mar 08:00', due: '23 Mar 18:00', estCost: '6,800', status: 'Completed' },
+  { id: 'MWO-9001', type: 'Corrective', machine: 'TST-E02', desc: 'Replace hydraulic pump seal', priority: 'Critical', assigned: 'Prakash D', created: '23 Mar 09:15', due: '23 Mar 18:00', estCost: '12,400', status: 'In Progress' },
+  { id: 'MWO-9002', type: 'Preventive', machine: 'CNC-A01', desc: 'Quarterly spindle bearing inspection', priority: 'High', assigned: 'Ganesh T', created: '23 Mar 06:00', due: '24 Mar 14:00', estCost: '8,500', status: 'Open' },
+  { id: 'MWO-9003', type: 'Corrective', machine: 'CNC-A02', desc: 'Replace ATC pneumatic cylinder', priority: 'High', assigned: 'Manoj R', created: '22 Mar 16:50', due: '23 Mar 12:00', estCost: '18,200', status: 'Completed' },
+  { id: 'MWO-9004', type: 'Preventive', machine: 'GRD-C01', desc: 'Annual coolant system overhaul', priority: 'Medium', assigned: 'Ganesh T', created: '22 Mar 08:00', due: '25 Mar 18:00', estCost: '22,600', status: 'Open' },
+  { id: 'MWO-9005', type: 'Improvement', machine: 'ASM-D01', desc: 'Install torque monitoring sensor', priority: 'Medium', assigned: 'Prakash D', created: '21 Mar 10:00', due: '28 Mar 18:00', estCost: '45,000', status: 'Open' },
+  { id: 'MWO-9006', type: 'Corrective', machine: 'PNT-F01', desc: 'Replace spray gun nozzle assembly', priority: 'Low', assigned: 'Manoj R', created: '23 Mar 13:05', due: '24 Mar 10:00', estCost: '3,200', status: 'Completed' },
+  { id: 'MWO-9007', type: 'Preventive', machine: 'VMC-B01', desc: 'Ball screw lubrication and check', priority: 'Medium', assigned: 'Ganesh T', created: '20 Mar 08:00', due: '23 Mar 18:00', estCost: '6,800', status: 'Completed' },
   { id: 'MWO-9008', type: 'Corrective', machine: 'GRD-C04', desc: 'Rewind coolant pump motor', priority: 'High', assigned: 'External Vendor', created: '22 Mar 14:35', due: '26 Mar 12:00', estCost: '15,400', status: 'In Progress' },
-  { id: 'MWO-9009', type: 'Preventive', machine: 'CNC-A03', desc: 'Chuck jaw replacement', priority: 'Medium', assigned: 'Patrick D', created: '19 Mar 08:00', due: '22 Mar 18:00', estCost: '9,200', status: 'Completed' },
-  { id: 'MWO-9010', type: 'Improvement', machine: 'TST-E01', desc: 'Upgrade data acquisition system', priority: 'Low', assigned: 'Marcus R', created: '18 Mar 10:00', due: '31 Mar 18:00', estCost: '1,25,000', status: 'Open' },
-  { id: 'MWO-9011', type: 'Corrective', machine: 'CNC-A06', desc: 'Spindle bearing replacement', priority: 'Critical', assigned: 'Greg T', created: '23 Mar 08:25', due: '23 Mar 12:00', estCost: '28,600', status: 'Completed' },
-  { id: 'MWO-9012', type: 'Preventive', machine: 'VMC-B02', desc: 'Servo drive parameter backup', priority: 'Low', assigned: 'Patrick D', created: '20 Mar 14:00', due: '24 Mar 18:00', estCost: '0', status: 'Open' },
+  { id: 'MWO-9009', type: 'Preventive', machine: 'CNC-A03', desc: 'Chuck jaw replacement', priority: 'Medium', assigned: 'Prakash D', created: '19 Mar 08:00', due: '22 Mar 18:00', estCost: '9,200', status: 'Completed' },
+  { id: 'MWO-9010', type: 'Improvement', machine: 'TST-E01', desc: 'Upgrade data acquisition system', priority: 'Low', assigned: 'Manoj R', created: '18 Mar 10:00', due: '31 Mar 18:00', estCost: '1,25,000', status: 'Open' },
+  { id: 'MWO-9011', type: 'Corrective', machine: 'CNC-A06', desc: 'Spindle bearing replacement', priority: 'Critical', assigned: 'Ganesh T', created: '23 Mar 08:25', due: '23 Mar 12:00', estCost: '28,600', status: 'Completed' },
+  { id: 'MWO-9012', type: 'Preventive', machine: 'VMC-B02', desc: 'Servo drive parameter backup', priority: 'Low', assigned: 'Prakash D', created: '20 Mar 14:00', due: '24 Mar 18:00', estCost: '0', status: 'Open' },
 ];
 
 const STATUS_COLOR = { Open: 'accent', 'In Progress': 'amber', Completed: 'green', Overdue: 'red' };

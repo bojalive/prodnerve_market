@@ -2,8 +2,8 @@ import React from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, Badge, StatusDot } from '../../components/ui';
 
 const WO = {
-  wo: 'WO-2526-10001', product: 'PA-450 Hub Assembly', customer: 'Deere & Company Ltd',
-  plant: 'Shawano', status: 'In Progress', priority: 'High',
+  wo: 'WO-2526-10001', product: 'GT-C200 Comber', customer: 'Trident Limited',
+  plant: 'Coimbatore', status: 'In Progress', priority: 'High',
   orderQty: 48, completed: 38, rejected: 2, yield: 95.0,
 };
 
@@ -32,8 +32,8 @@ const TIMELINE = [
   { ts: '22 Mar 2026 17:30', action: 'Op 30 completed -- 46 good, 1 rejected (dimensional)', user: 'Vijay M (Operator)', icon: 'check_circle' },
   { ts: '21 Mar 2026 14:00', action: 'Additional material issued -- SKF bearings x 80', user: 'Stores - Anand P', icon: 'inventory' },
   { ts: '20 Mar 2026 08:00', action: 'Op 20 completed -- 47 good, 1 rejected (surface defect)', user: 'Kevin R (Operator)', icon: 'check_circle' },
-  { ts: '18 Mar 2026 16:45', action: 'WO released to shop floor', user: 'Stan N (Planner)', icon: 'send' },
-  { ts: '17 Mar 2026 10:30', action: 'Work Order created', user: 'Patricia S (Planning)', icon: 'note_add' },
+  { ts: '18 Mar 2026 16:45', action: 'WO released to shop floor', user: 'Senthil N (Planner)', icon: 'send' },
+  { ts: '17 Mar 2026 10:30', action: 'Work Order created', user: 'Priya S (Planning)', icon: 'note_add' },
 ];
 
 const opStatusColor = (s) => {

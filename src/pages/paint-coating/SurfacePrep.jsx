@@ -3,12 +3,12 @@ import { KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../compon
 
 const MOCK_RECORDS = [
   { wo: 'WO-2026-0451', serial: 'EG-4022-WIS', method: 'Shot Blast', grade: 'SA 2.5', profile: 52, clean: 'Pass', date: '23-Mar-2026 08:15', operator: 'M. Kannan' },
-  { wo: 'WO-2026-0449', serial: 'AB-3018-HSR', method: 'Chemical', grade: 'St 3', profile: 44, clean: 'Pass', date: '23-Mar-2026 08:40', operator: 'R. Hansen' },
+  { wo: 'WO-2026-0449', serial: 'AB-3018-HSR', method: 'Chemical', grade: 'St 3', profile: 44, clean: 'Pass', date: '23-Mar-2026 08:40', operator: 'R. Kannan' },
   { wo: 'WO-2026-0448', serial: 'TS-1055-PNE', method: 'Shot Blast', grade: 'SA 2.5', profile: 50, clean: 'Pass', date: '23-Mar-2026 09:10', operator: 'V. Rajan' },
   { wo: 'WO-2026-0447', serial: 'DS-2089-AMD', method: 'Manual', grade: 'St 2', profile: 38, clean: 'Fail', date: '23-Mar-2026 09:35', operator: 'K. Devi' },
   { wo: 'WO-2026-0446', serial: 'VSD-6014-JMP', method: 'Shot Blast', grade: 'SA 3', profile: 55, clean: 'Pass', date: '23-Mar-2026 10:00', operator: 'M. Kannan' },
-  { wo: 'WO-2026-0445', serial: 'EG-4023-WIS', method: 'Chemical', grade: 'St 3', profile: 46, clean: 'Pass', date: '23-Mar-2026 10:20', operator: 'R. Hansen' },
-  { wo: 'WO-2026-0444', serial: 'AB-3019-HSR', method: 'Shot Blast', grade: 'SA 2.5', profile: 49, clean: 'Pass', date: '23-Mar-2026 10:45', operator: 'S. Mason' },
+  { wo: 'WO-2026-0445', serial: 'EG-4023-WIS', method: 'Chemical', grade: 'St 3', profile: 46, clean: 'Pass', date: '23-Mar-2026 10:20', operator: 'R. Kannan' },
+  { wo: 'WO-2026-0444', serial: 'AB-3019-HSR', method: 'Shot Blast', grade: 'SA 2.5', profile: 49, clean: 'Pass', date: '23-Mar-2026 10:45', operator: 'S. Mahesh' },
   { wo: 'WO-2026-0443', serial: 'TS-1056-PNE', method: 'Shot Blast', grade: 'SA 2.5', profile: 51, clean: 'Pass', date: '23-Mar-2026 11:05', operator: 'V. Rajan' },
 ];
 

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { MI, FormField, SectionLabel } from '../../components/ui';
 
 const PRODUCTS = [
-  'PA-225 Hub Assembly', 'PA-450 Hub Assembly', 'PA-625 Hub Assembly', 'PA-880 Hub Assembly',
-  'HC-100 Hydraulic Cyl Body', 'HC-250 Hydraulic Cyl Body', 'HC-500 Hydraulic Cyl Body',
-  'BR-75 Aerospace Bracket', 'BR-150 Aerospace Bracket', 'BR-300 Aerospace Bracket',
+  'GT-C100 Comber', 'GT-C200 Comber', 'GT-C300 Comber', 'GT-DF500 Draw Frame',
+  'GT-LF600 Lap Former', 'GT-LF700 Lap Former', 'GT-SF200 Speed Frame',
+  'GT-RF400 Ring Frame', 'GT-RF450 Ring Frame', 'GT-OE300 Open-End Spinner',
   'VSD-100 Controller', 'VSD-200 Controller',
 ];
-const PLANTS = ['Shawano', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
-const ROUTINGS = ['RT-CNC-STD (CNC Mill Standard)', 'RT-CNC-HVY (CNC Mill Heavy Duty)', 'RT-TRN-STD (CNC Turning Standard)', 'RT-GRD-STD (Grinding Standard)', 'RT-FIN-INS (Finishing & Inspection)'];
+const PLANTS = ['Coimbatore', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
+const ROUTINGS = ['RT-FAB-STD (Fabrication Standard)', 'RT-FAB-HVY (Fabrication Heavy Duty)', 'RT-MAC-STD (Machining Standard)', 'RT-ASM-STD (Assembly Standard)', 'RT-RUN-IN (Run-In Test & QA)'];
 const UOMS = ['Nos', 'Sets', 'Kits'];
 const PRIORITIES = ['Low', 'Medium', 'High', 'Critical'];
 
