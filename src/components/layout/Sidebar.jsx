@@ -60,7 +60,7 @@ export function Sidebar({ portals, activePortal, navigate, user, mobileOpen, onC
               fontWeight: 800,
               color: '#fff',
               letterSpacing: -1,
-            }}>PN</span>
+            }}>{import.meta.env.VITE_COMPANY_SHORT || `PN`}</span>
           </div>
           <div>
             <div style={{
@@ -68,7 +68,7 @@ export function Sidebar({ portals, activePortal, navigate, user, mobileOpen, onC
               fontWeight: 700,
               color: 'var(--text)',
               lineHeight: 1.2,
-            }}>Prod Nerve</div>
+            }}>{import.meta.env.VITE_COMPANY_NAME || `Prod Nerve`}</div>
             <div style={{
               fontSize: '.62rem',
               color: 'var(--text-mute)',

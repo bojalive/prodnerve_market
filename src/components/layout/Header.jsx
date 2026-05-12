@@ -48,7 +48,7 @@ export function Header({ portal, subPage, onMobileToggle, onThemeToggle, theme, 
           fontSize: '.88rem',
           color: 'var(--accent)',
           letterSpacing: -.3,
-        }}>Prod Nerve</span>
+        }}>{import.meta.env.VITE_COMPANY_NAME || `Prod Nerve`}</span>
       </div>
 
       {/* Center: breadcrumb */}

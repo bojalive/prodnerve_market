@@ -19,7 +19,7 @@ export default function Dashboard({ portals, navigate, user }) {
           color: 'var(--text)',
           letterSpacing: -.5,
           marginBottom: 4,
-        }}>Production Nerve Center</h1>
+        }}>{import.meta.env.VITE_SUITE_TITLE || `Production Nerve Center`}</h1>
         <p style={{
           fontSize: '.8rem',
           color: 'var(--text-mute)',

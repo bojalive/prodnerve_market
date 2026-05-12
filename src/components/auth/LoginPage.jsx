@@ -55,18 +55,18 @@ export function LoginPage({ onLogin }) {
               fontWeight: 800,
               color: '#fff',
               letterSpacing: -1,
-            }}>PN</span>
+            }}>{import.meta.env.VITE_COMPANY_SHORT || `PN`}</span>
           </div>
           <h1 style={{
             fontSize: '1.3rem',
             fontWeight: 700,
             color: 'var(--text)',
             marginBottom: 4,
-          }}>Production Nerve Center</h1>
+          }}>{import.meta.env.VITE_SUITE_TITLE || `Production Nerve Center`}</h1>
           <p style={{
             fontSize: '.78rem',
             color: 'var(--text-mute)',
-          }}>Manufacturing Control Platform</p>
+          }}>Precision Manufacturing Suite</p>
         </div>
 
         {/* Card */}

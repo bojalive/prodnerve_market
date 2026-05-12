@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from 'react';
 
 const MOCK_USER = {
   id: 1,
-  name: 'Rajesh Chandran',
-  email: 'rajesh@psuite.in',
+  name: import.meta.env.VITE_DEFAULT_USER_NAME || 'Demo User',
+  email: import.meta.env.VITE_DEFAULT_USER_EMAIL || 'demo@example.com',
   role: 'super_admin',
-  plant: 'Coimbatore',
+  plant: import.meta.env.VITE_PLANT_CITY || 'Plant A',
 };
 
 const STORAGE_KEY = 'pn_auth';
@@ -39,7 +39,6 @@ export function useAuth() {
 
   return {
     user,
-    role: user?.role || null,
     login,
     logout,
     loading,
