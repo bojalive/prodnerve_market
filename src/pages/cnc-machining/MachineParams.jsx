@@ -6,10 +6,10 @@ const PARAM_LOG = [
   { machine: 'CNC-A01', time: '23 Mar 10:00', spindleTemp: 40, coolantConc: 8.4, pressure: 6.5, vibration: 1.6, operator: 'Mike R', status: 'OK' },
   { machine: 'CNC-A02', time: '23 Mar 14:00', spindleTemp: 45, coolantConc: 7.8, pressure: 6.2, vibration: 2.4, operator: 'Scott M', status: 'Warn' },
   { machine: 'CNC-A02', time: '23 Mar 10:00', spindleTemp: 43, coolantConc: 8.0, pressure: 6.3, vibration: 2.1, operator: 'Scott M', status: 'OK' },
-  { machine: 'CNC-A03', time: '23 Mar 14:00', spindleTemp: 38, coolantConc: 8.6, pressure: 6.6, vibration: 1.2, operator: 'Karthik V', status: 'OK' },
-  { machine: 'VMC-B01', time: '23 Mar 14:00', spindleTemp: 44, coolantConc: 7.5, pressure: 6.1, vibration: 2.0, operator: 'Karthik V', status: 'OK' },
+  { machine: 'CNC-A03', time: '23 Mar 14:00', spindleTemp: 38, coolantConc: 8.6, pressure: 6.6, vibration: 1.2, operator: 'Karl V', status: 'OK' },
+  { machine: 'VMC-B01', time: '23 Mar 14:00', spindleTemp: 44, coolantConc: 7.5, pressure: 6.1, vibration: 2.0, operator: 'Karl V', status: 'OK' },
   { machine: 'VMC-B02', time: '23 Mar 14:00', spindleTemp: 48, coolantConc: 7.2, pressure: 5.8, vibration: 2.8, operator: 'Steve P', status: 'Warn' },
-  { machine: 'GRD-C01', time: '23 Mar 14:00', spindleTemp: 36, coolantConc: 9.0, pressure: 6.8, vibration: 0.8, operator: 'Deepak N', status: 'OK' },
+  { machine: 'GRD-C01', time: '23 Mar 14:00', spindleTemp: 36, coolantConc: 9.0, pressure: 6.8, vibration: 0.8, operator: 'Dan N', status: 'OK' },
 ];
 
 const STATUS_COLOR = { OK: 'green', Warn: 'amber', Alert: 'red' };

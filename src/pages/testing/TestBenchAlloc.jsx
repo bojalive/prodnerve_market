@@ -2,11 +2,11 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const BENCHES = [
-  { bench: 'TB-01', name: 'Performance Test Bench A', capacity: '250 HP', currentUnit: 'EG-4022-CBE', product: 'PA-450', wo: 'WO-2526-10001', startTime: '23 Mar 10:30', estEnd: '23 Mar 16:30', status: 'In Test' },
+  { bench: 'TB-01', name: 'Performance Test Bench A', capacity: '250 HP', currentUnit: 'EG-4022-WIS', product: 'PA-450', wo: 'WO-2526-10001', startTime: '23 Mar 10:30', estEnd: '23 Mar 16:30', status: 'In Test' },
   { bench: 'TB-02', name: 'Performance Test Bench B', capacity: '100 HP', currentUnit: 'TS-1055-PNE', product: 'BR-75', wo: 'WO-2526-10003', startTime: '23 Mar 11:00', estEnd: '23 Mar 15:00', status: 'In Test' },
   { bench: 'TB-03', name: 'Noise & Vibration Chamber', capacity: '500 HP', currentUnit: 'AB-3018-HSR', product: 'HC-500', wo: 'WO-2526-10006', startTime: '23 Mar 09:00', estEnd: '23 Mar 13:00', status: 'In Test' },
   { bench: 'TB-04', name: 'Endurance Test Bench', capacity: '200 HP', currentUnit: '--', product: '--', wo: '--', startTime: '--', estEnd: '--', status: 'Available' },
-  { bench: 'TB-05', name: 'Safety Valve Test Rig', capacity: '50 bar', currentUnit: 'EG-4023-CBE', product: 'PA-450', wo: 'WO-2526-10001', startTime: '23 Mar 13:00', estEnd: '23 Mar 14:30', status: 'In Test' },
+  { bench: 'TB-05', name: 'Safety Valve Test Rig', capacity: '50 bar', currentUnit: 'EG-4023-WIS', product: 'PA-450', wo: 'WO-2526-10001', startTime: '23 Mar 13:00', estEnd: '23 Mar 14:30', status: 'In Test' },
   { bench: 'TB-06', name: 'Hydrostatic Test Bench', capacity: '100 bar', currentUnit: '--', product: '--', wo: '--', startTime: '--', estEnd: '--', status: 'Maintenance' },
 ];
 

@@ -9,7 +9,7 @@ const WELD_PASSES = [
   { wo: 'WO-2526-10006', joint: 'Suction Header', pass: 'Root', process: 'GTAW', current: 90, voltage: 10.5, speed: 70, heatInput: 0.81, filler: 'ER308L \u00d81.6', gas: 'Ar 99.99%', welder: 'A. Babu', status: 'OK' },
   { wo: 'WO-2526-10006', joint: 'Suction Header', pass: 'Fill/Cap', process: 'GTAW', current: 120, voltage: 12.0, speed: 85, heatInput: 1.02, filler: 'ER308L \u00d82.4', gas: 'Ar 99.99%', welder: 'A. Babu', status: 'OK' },
   { wo: 'WO-2526-10003', joint: 'Cyl to Crankcase', pass: 'Root', process: 'SMAW', current: 100, voltage: 22.0, speed: 90, heatInput: 1.47, filler: 'ENiFe-CI \u00d83.2', gas: '--', welder: 'V. Rajan', status: 'Warn' },
-  { wo: 'WO-2526-10008', joint: 'Tank Shell Seam', pass: 'Root', process: 'SAW', current: 450, voltage: 30.0, speed: 350, heatInput: 2.31, filler: 'EM12K \u00d83.2', gas: 'F7A2 Flux', welder: 'N. Senthil', status: 'OK' },
+  { wo: 'WO-2526-10008', joint: 'Tank Shell Seam', pass: 'Root', process: 'SAW', current: 450, voltage: 30.0, speed: 350, heatInput: 2.31, filler: 'EM12K \u00d83.2', gas: 'F7A2 Flux', welder: 'N. Stan', status: 'OK' },
 ];
 
 const STATUS_COLOR = { OK: 'green', Warn: 'amber', Fail: 'red' };

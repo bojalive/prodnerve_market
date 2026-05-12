@@ -9,7 +9,7 @@ const FIT_UP_DATA = [
   { id: 'JP-3005', wo: 'WO-2526-10008', joint: 'Tank Shell Seam', wps: 'WPS-DS10-001', rootGap: 3.0, rootFace: 2.0, bevelAngle: 30, misalign: 1.2, clean: 'Fail', inspector: 'S. Mason', date: '22 Mar 2026', status: 'Rejected' },
   { id: 'JP-3006', wo: 'WO-2526-10004', joint: 'Motor Mount Bracket', wps: 'WPS-EG55-001', rootGap: 2.0, rootFace: 1.5, bevelAngle: 45, misalign: 0.5, clean: 'Pass', inspector: 'P. Kelly', date: '22 Mar 2026', status: 'Approved' },
   { id: 'JP-3007', wo: 'WO-2526-10007', joint: 'Suction Flange', wps: 'WPS-EG22-002', rootGap: 2.5, rootFace: 1.8, bevelAngle: 35, misalign: 0.4, clean: 'Pass', inspector: 'A. Babu', date: '22 Mar 2026', status: 'Approved' },
-  { id: 'JP-3008', wo: 'WO-2526-10011', joint: 'Housing Weld Joint', wps: 'WPS-AB30-001', rootGap: 1.5, rootFace: 1.0, bevelAngle: 30, misalign: 0.2, clean: 'Pass', inspector: 'T. Ganesh', date: '22 Mar 2026', status: 'Approved' },
+  { id: 'JP-3008', wo: 'WO-2526-10011', joint: 'Housing Weld Joint', wps: 'WPS-AB30-001', rootGap: 1.5, rootFace: 1.0, bevelAngle: 30, misalign: 0.2, clean: 'Pass', inspector: 'T. Greg', date: '22 Mar 2026', status: 'Approved' },
 ];
 
 const STATUS_COLOR = { Approved: 'green', Rejected: 'red', Pending: 'amber' };

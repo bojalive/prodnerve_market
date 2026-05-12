@@ -51,7 +51,7 @@ export default function ShiftHandover() {
             <select className="form-select" value={form.supervisor} onChange={e => set('supervisor', e.target.value)}>
               <option value="">-- Select --</option>
               <option>Mike R</option><option>Scott M</option><option>Andrew S</option>
-              <option>Karthik V</option><option>Steve P</option>
+              <option>Karl V</option><option>Steve P</option>
             </select>
           </FormField>
         </div>

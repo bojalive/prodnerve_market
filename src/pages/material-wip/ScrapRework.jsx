@@ -3,8 +3,8 @@ import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const SCRAP_REWORK = [
   { id: 'SR-2001', wo: 'WO-2526-10001', product: 'PA-450', part: 'Rotor Blank', type: 'Scrap', qty: 2, reason: 'Bore OD out of spec', cost: '8,400', stage: 'CNC Machining', operator: 'Mike R', date: '23 Mar 2026', status: 'Disposed' },
-  { id: 'SR-2002', wo: 'WO-2526-10003', product: 'BR-75', part: 'Body Casting', type: 'Rework', qty: 4, reason: 'Surface finish Ra 1.2 (spec 0.8)', cost: '2,400', stage: 'Grinding', operator: 'Karthik V', date: '23 Mar 2026', status: 'In Rework' },
-  { id: 'SR-2003', wo: 'WO-2526-10006', product: 'HC-500', part: 'Housing Assembly', type: 'Scrap', qty: 1, reason: 'Leak test failure, unrepairable', cost: '18,600', stage: 'Assembly', operator: 'Deepak N', date: '22 Mar 2026', status: 'Disposed' },
+  { id: 'SR-2002', wo: 'WO-2526-10003', product: 'BR-75', part: 'Body Casting', type: 'Rework', qty: 4, reason: 'Surface finish Ra 1.2 (spec 0.8)', cost: '2,400', stage: 'Grinding', operator: 'Karl V', date: '23 Mar 2026', status: 'In Rework' },
+  { id: 'SR-2003', wo: 'WO-2526-10006', product: 'HC-500', part: 'Housing Assembly', type: 'Scrap', qty: 1, reason: 'Leak test failure, unrepairable', cost: '18,600', stage: 'Assembly', operator: 'Dan N', date: '22 Mar 2026', status: 'Disposed' },
   { id: 'SR-2004', wo: 'WO-2526-10007', product: 'BR-150', part: 'Piston Pin', type: 'Rework', qty: 6, reason: 'Thread gauge failure M8', cost: '1,800', stage: 'CNC Machining', operator: 'Scott M', date: '22 Mar 2026', status: 'Completed' },
   { id: 'SR-2005', wo: 'WO-2526-10004', product: 'PA-625', part: 'Discharge Flange', type: 'Rework', qty: 2, reason: 'Paint peeling', cost: '1,200', stage: 'Paint / Coating', operator: 'D. Vignesh', date: '21 Mar 2026', status: 'Completed' },
   { id: 'SR-2006', wo: 'WO-2526-10008', product: 'PA-880', part: 'Weld Joint', type: 'Rework', qty: 1, reason: 'Weld undercut 0.6mm', cost: '3,400', stage: 'Welding', operator: 'V. Rajan', date: '20 Mar 2026', status: 'Completed' },

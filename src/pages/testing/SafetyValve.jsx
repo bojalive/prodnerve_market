@@ -2,14 +2,14 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const VALVE_TESTS = [
-  { serial: 'EG-4022-CBE', valve: 'SV-01 (Primary)', setSP: 8.5, actSP: 8.4, reseatP: 7.8, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Kelly S', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'EG-4022-CBE', valve: 'SV-02 (Thermal)', setSP: 10.0, actSP: 9.8, reseatP: 9.2, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Kelly S', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'EG-4023-CBE', valve: 'SV-01 (Primary)', setSP: 8.5, actSP: 8.6, reseatP: 7.9, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Kelly S', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'AB-3018-HSR', valve: 'SV-01 (Primary)', setSP: 10.5, actSP: 10.3, reseatP: 9.6, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Ramesh P', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'AB-3018-HSR', valve: 'SV-02 (Separator)', setSP: 7.0, actSP: 7.2, reseatP: 6.5, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Ramesh P', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'EG-4022-WIS', valve: 'SV-01 (Primary)', setSP: 8.5, actSP: 8.4, reseatP: 7.8, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Kelly S', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'EG-4022-WIS', valve: 'SV-02 (Thermal)', setSP: 10.0, actSP: 9.8, reseatP: 9.2, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Kelly S', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'EG-4023-WIS', valve: 'SV-01 (Primary)', setSP: 8.5, actSP: 8.6, reseatP: 7.9, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Kelly S', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'AB-3018-HSR', valve: 'SV-01 (Primary)', setSP: 10.5, actSP: 10.3, reseatP: 9.6, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Ryan P', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'AB-3018-HSR', valve: 'SV-02 (Separator)', setSP: 7.0, actSP: 7.2, reseatP: 6.5, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Ryan P', date: '23 Mar 2026', result: 'Pass' },
   { serial: 'TS-1055-PNE', valve: 'SV-01 (Primary)', setSP: 7.0, actSP: 7.4, reseatP: 6.4, leakTest: 'Fail', certStd: 'IS 2825', tester: 'Kelly S', date: '22 Mar 2026', result: 'Fail' },
   { serial: 'TS-1056-PNE', valve: 'SV-01 (Primary)', setSP: 7.0, actSP: 7.0, reseatP: 6.5, leakTest: 'Pass', certStd: 'IS 2825', tester: 'Kelly S', date: '22 Mar 2026', result: 'Pass' },
-  { serial: 'DS-2089-AMD', valve: 'SV-01 (Primary)', setSP: 12.0, actSP: 11.8, reseatP: 11.0, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Ramesh P', date: '22 Mar 2026', result: 'Pass' },
+  { serial: 'DS-2089-AMD', valve: 'SV-01 (Primary)', setSP: 12.0, actSP: 11.8, reseatP: 11.0, leakTest: 'Pass', certStd: 'ASME VIII', tester: 'Ryan P', date: '22 Mar 2026', result: 'Pass' },
 ];
 
 const RESULT_COLOR = { Pass: 'green', Fail: 'red' };

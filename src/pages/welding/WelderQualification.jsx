@@ -9,8 +9,8 @@ const WELDERS = [
   { id: 'WQ-005', name: 'S. Mason', empId: 'EMP-1091', process: 'SMAW', position: '1G, 2G, 3G', material: 'CS', certNo: 'ASME-IX-4485', issueDate: '05 Nov 2025', expiry: '04 Nov 2027', status: 'Valid' },
   { id: 'WQ-006', name: 'P. Kelly', empId: 'EMP-1104', process: 'FCAW', position: '1G, 2G', material: 'CS', certNo: 'ASME-IX-4486', issueDate: '18 Sep 2024', expiry: '17 Sep 2026', status: 'Valid' },
   { id: 'WQ-007', name: 'A. Babu', empId: 'EMP-1117', process: 'GTAW', position: '1G, 2G, 5G, 6G', material: 'SS / Alloy', certNo: 'ASME-IX-4487', issueDate: '22 Jul 2025', expiry: '21 Jul 2027', status: 'Valid' },
-  { id: 'WQ-008', name: 'T. Ganesh', empId: 'EMP-1129', process: 'GMAW', position: '1G, 2G, 3G', material: 'CS / SS', certNo: 'ASME-IX-4488', issueDate: '12 Feb 2024', expiry: '11 Feb 2026', status: 'Expired' },
-  { id: 'WQ-009', name: 'N. Senthil', empId: 'EMP-1135', process: 'SAW', position: '1G', material: 'CS', certNo: 'ASME-IX-4489', issueDate: '30 Dec 2025', expiry: '29 Dec 2027', status: 'Valid' },
+  { id: 'WQ-008', name: 'T. Greg', empId: 'EMP-1129', process: 'GMAW', position: '1G, 2G, 3G', material: 'CS / SS', certNo: 'ASME-IX-4488', issueDate: '12 Feb 2024', expiry: '11 Feb 2026', status: 'Expired' },
+  { id: 'WQ-009', name: 'N. Stan', empId: 'EMP-1135', process: 'SAW', position: '1G', material: 'CS', certNo: 'ASME-IX-4489', issueDate: '30 Dec 2025', expiry: '29 Dec 2027', status: 'Valid' },
   { id: 'WQ-010', name: 'D. Vignesh', empId: 'EMP-1148', process: 'SMAW', position: '1G, 2G', material: 'CS', certNo: 'ASME-IX-4490', issueDate: '08 Apr 2025', expiry: '07 Apr 2027', status: 'Valid' },
 ];
 

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
 const MOCK_LOG = [
-  { serial: 'EG-4022-CBE', batch: 'PB-2026-0112', coats: 2, pressure: 4.5, fan: 25, distance: 20, flash: 10, result: 'OK' },
+  { serial: 'EG-4022-WIS', batch: 'PB-2026-0112', coats: 2, pressure: 4.5, fan: 25, distance: 20, flash: 10, result: 'OK' },
   { serial: 'AB-3018-HSR', batch: 'PB-2026-0113', coats: 2, pressure: 4.0, fan: 22, distance: 18, flash: 8, result: 'OK' },
   { serial: 'TS-1055-PNE', batch: 'PB-2026-0112', coats: 3, pressure: 4.5, fan: 25, distance: 20, flash: 10, result: 'Rework' },
   { serial: 'DS-2089-AMD', batch: 'PB-2026-0114', coats: 2, pressure: 5.0, fan: 28, distance: 22, flash: 12, result: 'OK' },
   { serial: 'VSD-6014-JMP', batch: 'PB-2026-0115', coats: 2, pressure: 4.5, fan: 25, distance: 20, flash: 10, result: 'OK' },
-  { serial: 'EG-4023-CBE', batch: 'PB-2026-0112', coats: 2, pressure: 4.2, fan: 24, distance: 19, flash: 10, result: 'OK' },
+  { serial: 'EG-4023-WIS', batch: 'PB-2026-0112', coats: 2, pressure: 4.2, fan: 24, distance: 19, flash: 10, result: 'OK' },
   { serial: 'AB-3019-HSR', batch: 'PB-2026-0113', coats: 3, pressure: 4.0, fan: 22, distance: 18, flash: 8, result: 'Rework' },
   { serial: 'TS-1056-PNE', batch: 'PB-2026-0114', coats: 2, pressure: 4.8, fan: 26, distance: 21, flash: 11, result: 'OK' },
 ];
@@ -30,7 +30,7 @@ export default function ApplicationParams() {
         <SectionLabel icon="spray">Spray Application Entry</SectionLabel>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 14 }}>
           <FormField label="Unit Serial">
-            <input className="form-input" placeholder="EG-4022-CBE" value={form.serial} onChange={e => set('serial', e.target.value)} />
+            <input className="form-input" placeholder="EG-4022-WIS" value={form.serial} onChange={e => set('serial', e.target.value)} />
           </FormField>
           <FormField label="Paint Batch">
             <input className="form-input" placeholder="PB-2026-0112" value={form.batch} onChange={e => set('batch', e.target.value)} />
