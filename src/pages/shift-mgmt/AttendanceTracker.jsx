@@ -12,7 +12,7 @@ const ATTENDANCE = [
   { empId: 'EMP-1129', name: 'T. Greg', dept: 'Assembly', shift: 'B', inTime: '13:55', outTime: '22:00', hours: 8.1, ot: 0, status: 'Present' },
   { empId: 'EMP-1135', name: 'N. Stan', dept: 'Testing', shift: 'A', inTime: '06:00', outTime: '17:30', hours: 11.5, ot: 3.5, status: 'Present' },
   { empId: 'EMP-1148', name: 'D. Vignesh', dept: 'Paint Shop', shift: 'A', inTime: '06:05', outTime: '14:00', hours: 7.9, ot: 0, status: 'Present' },
-  { empId: 'EMP-1152', name: 'R. Karthik', dept: 'CNC Bay 2', shift: 'A', inTime: '05:52', outTime: '14:00', hours: 8.1, ot: 0, status: 'Present' },
+  { empId: 'EMP-1152', name: 'R. Karl', dept: 'CNC Bay 2', shift: 'A', inTime: '05:52', outTime: '14:00', hours: 8.1, ot: 0, status: 'Present' },
   { empId: 'EMP-1165', name: 'M. Patrick', dept: 'Grinding', shift: 'B', inTime: '14:02', outTime: '22:00', hours: 8.0, ot: 0, status: 'Present' },
   { empId: 'EMP-1178', name: 'S. Ryan', dept: 'VMC Bay', shift: 'B', inTime: '14:00', outTime: '22:05', hours: 8.1, ot: 0, status: 'Present' },
   { empId: 'EMP-1191', name: 'K. Vijay', dept: 'Assembly', shift: 'A', inTime: '--', outTime: '--', hours: 0, ot: 0, status: 'Leave' },

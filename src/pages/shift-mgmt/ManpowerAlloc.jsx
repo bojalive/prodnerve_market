@@ -12,7 +12,7 @@ const ALLOCATIONS = [
   { empId: 'EMP-1129', name: 'T. Greg', skill: 'Assembly Fitter', grade: 'A', machine: 'ASM-D02', dept: 'Assembly', shift: 'B', from: '23 Mar', to: '28 Mar', status: 'Active' },
   { empId: 'EMP-1135', name: 'N. Stan', skill: 'Test Engineer', grade: 'A', machine: 'TST-E01', dept: 'Testing', shift: 'A', from: '23 Mar', to: '28 Mar', status: 'Active' },
   { empId: 'EMP-1148', name: 'D. Vignesh', skill: 'Paint Operator', grade: 'B', machine: 'PNT-F01', dept: 'Paint Shop', shift: 'A', from: '23 Mar', to: '28 Mar', status: 'Active' },
-  { empId: 'EMP-1152', name: 'R. Karthik', skill: 'CNC Operator', grade: 'B', machine: 'CNC-A05', dept: 'CNC Bay 2', shift: 'A', from: '23 Mar', to: '28 Mar', status: 'Active' },
+  { empId: 'EMP-1152', name: 'R. Karl', skill: 'CNC Operator', grade: 'B', machine: 'CNC-A05', dept: 'CNC Bay 2', shift: 'A', from: '23 Mar', to: '28 Mar', status: 'Active' },
   { empId: 'EMP-1165', name: 'M. Patrick', skill: 'Grinder Operator', grade: 'B', machine: 'GRD-C02', dept: 'Grinding', shift: 'B', from: '23 Mar', to: '28 Mar', status: 'Active' },
   { empId: 'EMP-1178', name: 'S. Ryan', skill: 'VMC Operator', grade: 'A', machine: 'VMC-B02', dept: 'VMC Bay', shift: 'B', from: '23 Mar', to: '28 Mar', status: 'Active' },
   { empId: 'EMP-1191', name: 'K. Vijay', skill: 'Assembly Fitter', grade: 'B', machine: 'ASM-D03', dept: 'Assembly', shift: 'A', from: '23 Mar', to: '25 Mar', status: 'Leave' },
