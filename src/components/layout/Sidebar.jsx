@@ -73,7 +73,7 @@ export function Sidebar({ portals, activePortal, navigate, user, mobileOpen, onC
               fontSize: '.62rem',
               color: 'var(--text-mute)',
               letterSpacing: .3,
-            }}>Manufacturing Control</div>
+            }}>{import.meta.env.VITE_SUITE_SUBTITLE || 'Manufacturing Control'}</div>
           </div>
         </div>
 

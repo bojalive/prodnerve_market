@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { useTheme } from './hooks/useTheme';
 import { useRouter } from './hooks/useRouter';
 import { AuthProvider, useAuthContext } from './contexts/AuthContext';
-import { PORTALS, PORTAL_SUBS } from './data/portals';
+import { PORTALS, ACTIVE_PORTALS, PORTAL_SUBS } from './data/portals';
 import { AppShell } from './components/layout/AppShell';
 import { PortalLayout } from './components/layout/PortalLayout';
 import { LoginPage } from './components/auth/LoginPage';
@@ -142,7 +142,7 @@ function AppInner() {
     <AppShell
       portal={currentPortal}
       subPage={subPageLabel}
-      portals={PORTALS}
+      portals={ACTIVE_PORTALS}
       navigate={navigate}
       user={user}
       theme={theme}
@@ -151,7 +151,7 @@ function AppInner() {
     >
       {!currentPortal ? (
         // Dashboard view
-        <Dashboard portals={PORTALS} navigate={navigate} user={user} />
+        <Dashboard portals={ACTIVE_PORTALS} navigate={navigate} user={user} />
       ) : (
         // Portal view with sub-page layout
         <PortalLayout

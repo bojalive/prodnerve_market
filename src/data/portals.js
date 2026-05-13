@@ -118,3 +118,14 @@ export const PORTAL_SUBS = {
     { id: 'reason-codes', label: 'Reason Codes', icon: 'account_tree' },
   ],
 };
+
+// Mode-scoped portal lists — controlled by VITE_APP_MODE
+const _MODE = import.meta.env.VITE_APP_MODE || 'nervecenter';
+const _SCOPED = {
+  qsuite:  ['quality', 'testing', 'maintenance', 'reports'],
+  psuite:  ['production-orders', 'shop-floor', 'cnc-machining', 'assembly',
+            'paint-coating', 'welding', 'material-wip', 'shift-mgmt', 'reports'],
+};
+export const ACTIVE_PORTALS = _SCOPED[_MODE]
+  ? PORTALS.filter(p => _SCOPED[_MODE].includes(p.id))
+  : PORTALS;

@@ -2,12 +2,28 @@ import React from 'react';
 import { MI, KpiCard } from '../components/ui';
 
 export default function Dashboard({ portals, navigate, user }) {
-  const kpis = [
-    { label: 'Active Work Orders', value: '84', sub: 'Across all lines', icon: 'assignment', change: '+12 this week', changeType: 'up' },
-    { label: "Today's Output", value: '3,842', sub: 'Units produced', icon: 'output', change: '+6.2% vs target', changeType: 'up' },
-    { label: 'OEE', value: '68.4%', sub: 'Plant average', icon: 'speed', change: '-2.1% vs last week', changeType: 'dn' },
-    { label: 'Open NCRs', value: '18', sub: 'Pending disposition', icon: 'report', change: '3 critical', changeType: 'w' },
-  ];
+  const _mode = import.meta.env.VITE_APP_MODE || 'nervecenter';
+  const _kpiMap = {
+    qsuite: [
+      { label: 'Open NCRs', value: '18', sub: 'Pending disposition', icon: 'report', change: '3 critical', changeType: 'w' },
+      { label: 'CAPA Overdue', value: '5', sub: 'Past target date', icon: 'task_alt', change: '-2 this week', changeType: 'up' },
+      { label: 'Calibration Due', value: '7', sub: 'Instruments pending', icon: 'straighten', change: '2 overdue', changeType: 'dn' },
+      { label: 'Test Certificates', value: '1,248', sub: 'Issued this month', icon: 'workspace_premium', change: '+8.4% vs last month', changeType: 'up' },
+    ],
+    psuite: [
+      { label: 'Active Work Orders', value: '84', sub: 'Across all lines', icon: 'assignment', change: '+12 this week', changeType: 'up' },
+      { label: "Today's Output", value: '3,842', sub: 'Units produced', icon: 'output', change: '+6.2% vs target', changeType: 'up' },
+      { label: 'OEE', value: '68.4%', sub: 'Plant average', icon: 'speed', change: '-2.1% vs last week', changeType: 'dn' },
+      { label: 'Downtime', value: '4.2h', sub: 'Unplanned today', icon: 'timer_off', change: '-18 min vs yesterday', changeType: 'up' },
+    ],
+    nervecenter: [
+      { label: 'Active Work Orders', value: '84', sub: 'Across all lines', icon: 'assignment', change: '+12 this week', changeType: 'up' },
+      { label: "Today's Output", value: '3,842', sub: 'Units produced', icon: 'output', change: '+6.2% vs target', changeType: 'up' },
+      { label: 'OEE', value: '68.4%', sub: 'Plant average', icon: 'speed', change: '-2.1% vs last week', changeType: 'dn' },
+      { label: 'Open NCRs', value: '18', sub: 'Pending disposition', icon: 'report', change: '3 critical', changeType: 'w' },
+    ],
+  };
+  const kpis = _kpiMap[_mode] || _kpiMap.nervecenter;
 
   return (
     <div style={{ animation: 'fadeUp .4s ease' }}>
