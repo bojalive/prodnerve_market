@@ -9,12 +9,12 @@ export default function ShiftHandoverForm() {
   const set = (k, v) => setForm(p => ({ ...p, [k]: v }));
 
   const HISTORY = [
-    { id: 'HO-501', shift: 'C to A', date: '23 Mar 06:00', outgoing: 'Andrew S', incoming: 'Mike R', issues: 2, ack: 'Yes', status: 'Complete' },
-    { id: 'HO-500', shift: 'B to C', date: '22 Mar 22:00', outgoing: 'Scott M', incoming: 'Andrew S', issues: 3, ack: 'Yes', status: 'Complete' },
-    { id: 'HO-499', shift: 'A to B', date: '22 Mar 14:00', outgoing: 'Mike R', incoming: 'Scott M', issues: 1, ack: 'Yes', status: 'Complete' },
-    { id: 'HO-498', shift: 'C to A', date: '22 Mar 06:00', outgoing: 'Andrew S', incoming: 'Mike R', issues: 0, ack: 'Yes', status: 'Complete' },
-    { id: 'HO-497', shift: 'B to C', date: '21 Mar 22:00', outgoing: 'Scott M', incoming: 'Andrew S', issues: 4, ack: 'Yes', status: 'Complete' },
-    { id: 'HO-496', shift: 'A to B', date: '21 Mar 14:00', outgoing: 'Mike R', incoming: 'Scott M', issues: 2, ack: 'Pending', status: 'Pending' },
+    { id: 'HO-501', shift: 'C to A', date: '23 Mar 06:00', outgoing: 'Anand S', incoming: 'Murugan R', issues: 2, ack: 'Yes', status: 'Complete' },
+    { id: 'HO-500', shift: 'B to C', date: '22 Mar 22:00', outgoing: 'Senthil M', incoming: 'Anand S', issues: 3, ack: 'Yes', status: 'Complete' },
+    { id: 'HO-499', shift: 'A to B', date: '22 Mar 14:00', outgoing: 'Murugan R', incoming: 'Senthil M', issues: 1, ack: 'Yes', status: 'Complete' },
+    { id: 'HO-498', shift: 'C to A', date: '22 Mar 06:00', outgoing: 'Anand S', incoming: 'Murugan R', issues: 0, ack: 'Yes', status: 'Complete' },
+    { id: 'HO-497', shift: 'B to C', date: '21 Mar 22:00', outgoing: 'Senthil M', incoming: 'Anand S', issues: 4, ack: 'Yes', status: 'Complete' },
+    { id: 'HO-496', shift: 'A to B', date: '21 Mar 14:00', outgoing: 'Murugan R', incoming: 'Senthil M', issues: 2, ack: 'Pending', status: 'Pending' },
   ];
 
   return (
@@ -44,12 +44,12 @@ export default function ShiftHandoverForm() {
           </FormField>
           <FormField label="Outgoing Supervisor">
             <select className="form-select" value={form.outgoing} onChange={e => set('outgoing', e.target.value)}>
-              <option value="">-- Select --</option><option>Mike R</option><option>Scott M</option><option>Andrew S</option>
+              <option value="">-- Select --</option><option>Murugan R</option><option>Senthil M</option><option>Anand S</option>
             </select>
           </FormField>
           <FormField label="Incoming Supervisor">
             <select className="form-select" value={form.incoming} onChange={e => set('incoming', e.target.value)}>
-              <option value="">-- Select --</option><option>Mike R</option><option>Scott M</option><option>Andrew S</option>
+              <option value="">-- Select --</option><option>Murugan R</option><option>Senthil M</option><option>Anand S</option>
             </select>
           </FormField>
         </div>

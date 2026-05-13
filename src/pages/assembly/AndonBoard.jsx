@@ -2,13 +2,13 @@ import React from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const ANDON_CALLS = [
-  { id: 'AND-201', station: 'Stn 5', type: 'Quality', desc: 'Bore dimension out of spec on housing', calledBy: 'Dan N', time: '23 Mar 14:05', response: '4 min', responder: 'QC - Scott M', status: 'Active' },
-  { id: 'AND-202', station: 'Stn 9', type: 'Material', desc: 'Cooling hose kit not available', calledBy: 'Patrick D', time: '23 Mar 13:40', response: '6 min', responder: 'Store - Mike R', status: 'Active' },
-  { id: 'AND-203', station: 'Stn 3', type: 'Equipment', desc: 'Torque wrench TW-A01 needs recalibration', calledBy: 'Karl V', time: '23 Mar 13:15', response: '3 min', responder: 'Maint - Steve P', status: 'Active' },
-  { id: 'AND-204', station: 'Stn 12', type: 'Quality', desc: 'Compression test failure on TS-1055', calledBy: 'Kelly S', time: '23 Mar 12:10', response: '5 min', responder: 'QC - Andrew S', status: 'Active' },
-  { id: 'AND-205', station: 'Stn 1', type: 'Safety', desc: 'Oil spill near workstation', calledBy: 'Mike R', time: '23 Mar 11:30', response: '2 min', responder: 'Safety - Greg T', status: 'Resolved' },
-  { id: 'AND-206', station: 'Stn 7', type: 'Equipment', desc: 'Pneumatic driver intermittent', calledBy: 'Marcus R', time: '23 Mar 10:45', response: '8 min', responder: 'Maint - Dan N', status: 'Resolved' },
-  { id: 'AND-207', station: 'Stn 4', type: 'Material', desc: 'Wrong seal kit delivered', calledBy: 'Steve P', time: '23 Mar 09:20', response: '4 min', responder: 'Store - Mike R', status: 'Resolved' },
+  { id: 'AND-201', station: 'Stn 5', type: 'Quality', desc: 'Bore dimension out of spec on housing', calledBy: 'Dinesh N', time: '23 Mar 14:05', response: '4 min', responder: 'QC - Senthil M', status: 'Active' },
+  { id: 'AND-202', station: 'Stn 9', type: 'Material', desc: 'Cooling hose kit not available', calledBy: 'Patrick D', time: '23 Mar 13:40', response: '6 min', responder: 'Store - Murugan R', status: 'Active' },
+  { id: 'AND-203', station: 'Stn 3', type: 'Equipment', desc: 'Torque wrench TW-A01 needs recalibration', calledBy: 'Karthik V', time: '23 Mar 13:15', response: '3 min', responder: 'Maint - Selvam P', status: 'Active' },
+  { id: 'AND-204', station: 'Stn 12', type: 'Quality', desc: 'Compression test failure on TS-1055', calledBy: 'Kavitha S', time: '23 Mar 12:10', response: '5 min', responder: 'QC - Anand S', status: 'Active' },
+  { id: 'AND-205', station: 'Stn 1', type: 'Safety', desc: 'Oil spill near workstation', calledBy: 'Murugan R', time: '23 Mar 11:30', response: '2 min', responder: 'Safety - Greg T', status: 'Resolved' },
+  { id: 'AND-206', station: 'Stn 7', type: 'Equipment', desc: 'Pneumatic driver intermittent', calledBy: 'Marcus R', time: '23 Mar 10:45', response: '8 min', responder: 'Maint - Dinesh N', status: 'Resolved' },
+  { id: 'AND-207', station: 'Stn 4', type: 'Material', desc: 'Wrong seal kit delivered', calledBy: 'Selvam P', time: '23 Mar 09:20', response: '4 min', responder: 'Store - Murugan R', status: 'Resolved' },
   { id: 'AND-208', station: 'Stn 10', type: 'Technical', desc: 'VFD parameter setup assistance needed', calledBy: 'Stan K', time: '23 Mar 08:50', response: '3 min', responder: 'Eng - Ryan T', status: 'Resolved' },
 ];
 
