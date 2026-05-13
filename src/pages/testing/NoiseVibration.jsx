@@ -6,10 +6,10 @@ const NV_DATA = [
   { serial: 'AB-3018-HSR', point: 'Non-Drive End Bearing', noiseSpec: '\u2264 72 dB(A)', noiseAct: 66.2, vibSpec: '\u2264 2.5 mm/s', vibAct: 1.4, vibFreq: '1X', status: 'Pass' },
   { serial: 'AB-3018-HSR', point: 'Component Housing', noiseSpec: '\u2264 75 dB(A)', noiseAct: 71.8, vibSpec: '\u2264 3.5 mm/s', vibAct: 2.2, vibFreq: '1X, BPF', status: 'Pass' },
   { serial: 'AB-3018-HSR', point: 'Discharge Side', noiseSpec: '\u2264 78 dB(A)', noiseAct: 76.5, vibSpec: '\u2264 4.0 mm/s', vibAct: 3.8, vibFreq: '1X, 2X, BPF', status: 'Warn' },
-  { serial: 'EG-4022-WIS', point: 'Drive End Bearing', noiseSpec: '\u2264 72 dB(A)', noiseAct: 69.8, vibSpec: '\u2264 2.5 mm/s', vibAct: 2.0, vibFreq: '1X', status: 'Pass' },
-  { serial: 'EG-4022-WIS', point: 'Non-Drive End Bearing', noiseSpec: '\u2264 72 dB(A)', noiseAct: 67.5, vibSpec: '\u2264 2.5 mm/s', vibAct: 1.6, vibFreq: '1X', status: 'Pass' },
-  { serial: 'EG-4022-WIS', point: 'Component Housing', noiseSpec: '\u2264 75 dB(A)', noiseAct: 73.2, vibSpec: '\u2264 3.5 mm/s', vibAct: 2.8, vibFreq: '1X, BPF', status: 'Pass' },
-  { serial: 'EG-4022-WIS', point: 'Discharge Side', noiseSpec: '\u2264 78 dB(A)', noiseAct: 74.1, vibSpec: '\u2264 4.0 mm/s', vibAct: 3.2, vibFreq: '1X, 2X', status: 'Pass' },
+  { serial: 'IC-4022-PCL', point: 'Drive End Bearing', noiseSpec: '\u2264 72 dB(A)', noiseAct: 69.8, vibSpec: '\u2264 2.5 mm/s', vibAct: 2.0, vibFreq: '1X', status: 'Pass' },
+  { serial: 'IC-4022-PCL', point: 'Non-Drive End Bearing', noiseSpec: '\u2264 72 dB(A)', noiseAct: 67.5, vibSpec: '\u2264 2.5 mm/s', vibAct: 1.6, vibFreq: '1X', status: 'Pass' },
+  { serial: 'IC-4022-PCL', point: 'Component Housing', noiseSpec: '\u2264 75 dB(A)', noiseAct: 73.2, vibSpec: '\u2264 3.5 mm/s', vibAct: 2.8, vibFreq: '1X, BPF', status: 'Pass' },
+  { serial: 'IC-4022-PCL', point: 'Discharge Side', noiseSpec: '\u2264 78 dB(A)', noiseAct: 74.1, vibSpec: '\u2264 4.0 mm/s', vibAct: 3.2, vibFreq: '1X, 2X', status: 'Pass' },
 ];
 
 const STATUS_COLOR = { Pass: 'green', Warn: 'amber', Fail: 'red' };

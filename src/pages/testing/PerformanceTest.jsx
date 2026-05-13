@@ -2,11 +2,11 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PERF_DATA = [
-  { serial: 'EG-4022-WIS', load: '25%', pressure: 2.1, flow: 1.42, power: 4.8, efficiency: 88.2, temp: 72, vibration: 1.2, result: 'Pass' },
-  { serial: 'EG-4022-WIS', load: '50%', pressure: 4.2, flow: 2.84, power: 9.2, efficiency: 91.4, temp: 78, vibration: 1.4, result: 'Pass' },
-  { serial: 'EG-4022-WIS', load: '75%', pressure: 6.3, flow: 4.18, power: 13.8, efficiency: 92.8, temp: 84, vibration: 1.8, result: 'Pass' },
-  { serial: 'EG-4022-WIS', load: '100%', pressure: 8.0, flow: 5.60, power: 18.5, efficiency: 93.1, temp: 92, vibration: 2.1, result: 'Pass' },
-  { serial: 'EG-4022-WIS', load: '110% (Overload)', pressure: 8.8, flow: 6.10, power: 20.8, efficiency: 91.6, temp: 98, vibration: 2.6, result: 'Pass' },
+  { serial: 'IC-4022-PCL', load: '25%', pressure: 2.1, flow: 1.42, power: 4.8, efficiency: 88.2, temp: 72, vibration: 1.2, result: 'Pass' },
+  { serial: 'IC-4022-PCL', load: '50%', pressure: 4.2, flow: 2.84, power: 9.2, efficiency: 91.4, temp: 78, vibration: 1.4, result: 'Pass' },
+  { serial: 'IC-4022-PCL', load: '75%', pressure: 6.3, flow: 4.18, power: 13.8, efficiency: 92.8, temp: 84, vibration: 1.8, result: 'Pass' },
+  { serial: 'IC-4022-PCL', load: '100%', pressure: 8.0, flow: 5.60, power: 18.5, efficiency: 93.1, temp: 92, vibration: 2.1, result: 'Pass' },
+  { serial: 'IC-4022-PCL', load: '110% (Overload)', pressure: 8.8, flow: 6.10, power: 20.8, efficiency: 91.6, temp: 98, vibration: 2.6, result: 'Pass' },
   { serial: 'TS-1055-PNE', load: '25%', pressure: 1.8, flow: 0.42, power: 1.2, efficiency: 82.4, temp: 65, vibration: 1.8, result: 'Pass' },
   { serial: 'TS-1055-PNE', load: '50%', pressure: 3.5, flow: 0.84, power: 2.3, efficiency: 85.6, temp: 72, vibration: 2.0, result: 'Pass' },
   { serial: 'TS-1055-PNE', load: '75%', pressure: 5.2, flow: 1.22, power: 3.4, efficiency: 86.2, temp: 80, vibration: 2.4, result: 'Pass' },

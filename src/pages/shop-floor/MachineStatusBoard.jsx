@@ -2,7 +2,7 @@ import React from 'react';
 import { MI, KpiCard, SectionLabel, StatusDot } from '../../components/ui';
 
 const MACHINES = [
-  { id: 'CNC-A01', name: 'Mori Seiki NL-2500', area: 'CNC Bay 1', status: 'Running', wo: 'WO-2526-10001', product: 'PA-450', progress: 82 },
+  { id: 'CNC-A01', name: 'Mori Seiki NL-2500', area: 'CNC Bay 1', status: 'Running', wo: 'WO-2526-10001', product: 'IC-2024', progress: 82 },
   { id: 'CNC-A02', name: 'Mazak QTN-200', area: 'CNC Bay 1', status: 'Running', wo: 'WO-2526-10003', product: 'BR-75', progress: 64 },
   { id: 'CNC-A03', name: 'Haas ST-30', area: 'CNC Bay 1', status: 'Running', wo: 'WO-2526-10008', product: 'PA-880', progress: 41 },
   { id: 'CNC-A04', name: 'Doosan Lynx 220', area: 'CNC Bay 2', status: 'Setup', wo: 'WO-2526-10012', product: 'PA-225', progress: 0 },
@@ -12,7 +12,7 @@ const MACHINES = [
   { id: 'VMC-B02', name: 'BFW BMV-45', area: 'VMC Bay', status: 'Running', wo: 'WO-2526-10006', product: 'HC-500', progress: 73 },
   { id: 'VMC-B03', name: 'Makino a51nx', area: 'VMC Bay', status: 'Idle', wo: '--', product: '--', progress: 0 },
   { id: 'VMC-B04', name: 'Haas VF-3', area: 'VMC Bay', status: 'Running', wo: 'WO-2526-10011', product: 'HC-100', progress: 28 },
-  { id: 'GRD-C01', name: 'Studer S33', area: 'Grinding', status: 'Running', wo: 'WO-2526-10001', product: 'PA-450', progress: 60 },
+  { id: 'GRD-C01', name: 'Studer S33', area: 'Grinding', status: 'Running', wo: 'WO-2526-10001', product: 'IC-2024', progress: 60 },
   { id: 'GRD-C02', name: 'Jones & Shipman', area: 'Grinding', status: 'Running', wo: 'WO-2526-10003', product: 'BR-75', progress: 45 },
   { id: 'GRD-C03', name: 'Toyoda GE4i', area: 'Grinding', status: 'Setup', wo: 'WO-2526-10008', product: 'PA-880', progress: 0 },
   { id: 'GRD-C04', name: 'Micromatic GCU-250', area: 'Grinding', status: 'Idle', wo: '--', product: '--', progress: 0 },
@@ -39,7 +39,7 @@ export default function MachineStatusBoard() {
     <>
       <div style={{ marginBottom: 18 }}>
         <h2 style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: -.5 }}>Machine Status Board</h2>
-        <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>Real-time status of all production equipment -- Shawano Plant</p>
+        <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>Real-time status of all production equipment -- Coimbatore Plant</p>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 14, marginBottom: 18 }}>

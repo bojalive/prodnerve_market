@@ -2,7 +2,7 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PRODUCTS = [
-  { code: 'PA-450', name: 'Hub Assembly 22kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '3.2-5.6 m\u00b3/min', weight: '420 kg', bom: 186, price: 'INR 4,85,000', status: 'Active' },
+  { code: 'IC-2024', name: 'Hub Assembly 22kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '3.2-5.6 m\u00b3/min', weight: '420 kg', bom: 186, price: 'INR 4,85,000', status: 'Active' },
   { code: 'PA-625', name: 'Hub Assembly 37kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '5.8-8.4 m\u00b3/min', weight: '580 kg', bom: 204, price: 'INR 6,20,000', status: 'Active' },
   { code: 'PA-880', name: 'Hub Assembly 55kW', series: 'EG', type: 'Oil-Injected Screw', pressure: '7.5-13 bar', flow: '8.2-11.8 m\u00b3/min', weight: '720 kg', bom: 228, price: 'INR 8,45,000', status: 'Active' },
   { code: 'HC-250', name: 'Hydraulic Cyl Body 15kW', series: 'AB', type: 'Precision-Milled Scroll', pressure: '8-10 bar', flow: '1.4-2.2 m\u00b3/min', weight: '280 kg', bom: 142, price: 'INR 6,80,000', status: 'Active' },

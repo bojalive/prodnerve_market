@@ -10,7 +10,7 @@ const INVENTORY_DATA = [
   { code: 'GS-EG37', desc: 'Gasket Set PA-625', category: 'Bought Out', uom: 'Sets', onHand: 24, allocated: 32, available: -8, reorder: 20, value: 'INR 0.4L', location: 'RM-A3-09', status: 'Shortage' },
   { code: 'ADC-COVER', desc: 'Aluminium Die Cast Cover', category: 'Castings', uom: 'Nos', onHand: 142, allocated: 72, available: 70, reorder: 50, value: 'INR 5.7L', location: 'RM-B1-04', status: 'OK' },
   { code: 'EP-RAL5015', desc: 'Epoxy Paint RAL 5015', category: 'Consumables', uom: 'Ltr', onHand: 220, allocated: 80, available: 140, reorder: 100, value: 'INR 1.1L', location: 'RM-E1-01', status: 'OK' },
-  { code: 'SL-EG22', desc: 'Shaft Seal Kit PA-450', category: 'Bought Out', uom: 'Sets', onHand: 18, allocated: 48, available: -30, reorder: 40, value: 'INR 0.5L', location: 'RM-A3-12', status: 'Shortage' },
+  { code: 'SL-EG22', desc: 'Shaft Seal Kit IC-2024', category: 'Bought Out', uom: 'Sets', onHand: 18, allocated: 48, available: -30, reorder: 40, value: 'INR 0.5L', location: 'RM-A3-12', status: 'Shortage' },
   { code: 'VFD-ABB', desc: 'ABB VFD 200kW Module', category: 'Bought Out', uom: 'Nos', onHand: 12, allocated: 8, available: 4, reorder: 10, value: 'INR 14.4L', location: 'RM-D2-01', status: 'Low' },
 ];
 

@@ -2,8 +2,8 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PROGRAMS = [
-  { id: 'O1001', name: 'EG22-ROTOR-OP10', machine: 'CNC-A01', part: 'PA-450 Rotor', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '8m 42s', status: 'Active' },
-  { id: 'O1002', name: 'EG22-ROTOR-OP20', machine: 'CNC-A01', part: 'PA-450 Rotor', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '6m 18s', status: 'Active' },
+  { id: 'O1001', name: 'EG22-ROTOR-OP10', machine: 'CNC-A01', part: 'IC-2024 Rotor', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '8m 42s', status: 'Active' },
+  { id: 'O1002', name: 'EG22-ROTOR-OP20', machine: 'CNC-A01', part: 'IC-2024 Rotor', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '6m 18s', status: 'Active' },
   { id: 'O2001', name: 'TS5-BODY-OP10', machine: 'CNC-A02', part: 'BR-75 Body', rev: 'B2', author: 'Greg S', verified: '12 Mar 2026', cycleTime: '4m 55s', status: 'Active' },
   { id: 'O2002', name: 'TS5-BODY-OP20', machine: 'VMC-B01', part: 'BR-75 Body', rev: 'B2', author: 'Greg S', verified: '12 Mar 2026', cycleTime: '7m 30s', status: 'Active' },
   { id: 'O3001', name: 'AB30-STATOR-OP10', machine: 'CNC-A03', part: 'HC-500 Stator', rev: 'A1', author: 'Pradeep M', verified: '20 Mar 2026', cycleTime: '12m 05s', status: 'Under Review' },

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { MI, FormField, SectionLabel } from '../../components/ui';
 
 const PRODUCTS = [
-  'PA-225 Hub Assembly', 'PA-450 Hub Assembly', 'PA-625 Hub Assembly', 'PA-880 Hub Assembly',
+  'PA-225 Hub Assembly', 'IC-2024 Instrument Cluster', 'PA-625 Hub Assembly', 'PA-880 Hub Assembly',
   'HC-100 Hydraulic Cyl Body', 'HC-250 Hydraulic Cyl Body', 'HC-500 Hydraulic Cyl Body',
   'BR-75 Aerospace Bracket', 'BR-150 Aerospace Bracket', 'BR-300 Aerospace Bracket',
   'VSD-100 Controller', 'VSD-200 Controller',
 ];
-const PLANTS = ['Shawano', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
+const PLANTS = ['Coimbatore', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
 const ROUTINGS = ['RT-CNC-STD (CNC Mill Standard)', 'RT-CNC-HVY (CNC Mill Heavy Duty)', 'RT-TRN-STD (CNC Turning Standard)', 'RT-GRD-STD (Grinding Standard)', 'RT-FIN-INS (Finishing & Inspection)'];
 const UOMS = ['Nos', 'Sets', 'Kits'];
 const PRIORITIES = ['Low', 'Medium', 'High', 'Critical'];

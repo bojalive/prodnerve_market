@@ -2,7 +2,7 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge, StatusDot } from '../../components/ui';
 
 const SCHEDULE = [
-  { job: 'JOB-4081', product: 'PA-450 Hub Assembly', qty: 48, machine: 'CNC Line A1', mon: [8, 8], tue: [8, 7], wed: [8, 8], thu: [8, 6], fri: [8, 0], sat: [8, 0] },
+  { job: 'JOB-4081', product: 'IC-2024 Instrument Cluster', qty: 48, machine: 'CNC Line A1', mon: [8, 8], tue: [8, 7], wed: [8, 8], thu: [8, 6], fri: [8, 0], sat: [8, 0] },
   { job: 'JOB-4082', product: 'HC-250 Hydraulic Cyl Body', qty: 24, machine: 'Assembly B2', mon: [4, 4], tue: [4, 3], wed: [4, 4], thu: [4, 4], fri: [4, 0], sat: [4, 0] },
   { job: 'JOB-4083', product: 'BR-75 Aerospace Bracket', qty: 120, machine: 'Press Line C1', mon: [20, 20], tue: [20, 18], wed: [20, 20], thu: [20, 19], fri: [20, 0], sat: [20, 0] },
   { job: 'JOB-4084', product: 'PA-625 Hub Assembly', qty: 16, machine: 'CNC Line A2', mon: [3, 3], tue: [3, 2], wed: [3, 3], thu: [3, 3], fri: [2, 0], sat: [2, 0] },

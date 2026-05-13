@@ -2,12 +2,12 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PLAN_DATA = [
-  { wo: 'WO-2526-10001', product: 'PA-450 Hub Assembly', plant: 'Shawano', planQty: 48, actualQty: 42, planStart: '17 Mar', planEnd: '28 Mar', actStart: '17 Mar', actEnd: '--', var: -12.5, status: 'In Progress' },
+  { wo: 'WO-2526-10001', product: 'IC-2024 Instrument Cluster', plant: 'Coimbatore', planQty: 48, actualQty: 42, planStart: '17 Mar', planEnd: '28 Mar', actStart: '17 Mar', actEnd: '--', var: -12.5, status: 'In Progress' },
   { wo: 'WO-2526-10002', product: 'HC-250 Hydraulic Cyl Body', plant: 'Pune', planQty: 24, actualQty: 18, planStart: '18 Mar', planEnd: '30 Mar', actStart: '18 Mar', actEnd: '--', var: -25.0, status: 'Behind' },
   { wo: 'WO-2526-10003', product: 'BR-75 Aerospace Bracket', plant: 'Jamshedpur', planQty: 120, actualQty: 115, planStart: '15 Mar', planEnd: '25 Mar', actStart: '15 Mar', actEnd: '--', var: -4.2, status: 'On Track' },
   { wo: 'WO-2526-10004', product: 'PA-625 Hub Assembly', plant: 'Hosur', planQty: 16, actualQty: 16, planStart: '10 Mar', planEnd: '22 Mar', actStart: '10 Mar', actEnd: '22 Mar', var: 0.0, status: 'Completed' },
   { wo: 'WO-2526-10005', product: 'VSD-200 Controller', plant: 'Ahmedabad', planQty: 200, actualQty: 0, planStart: '20 Mar', planEnd: '05 Apr', actStart: '--', actEnd: '--', var: -100.0, status: 'Not Started' },
-  { wo: 'WO-2526-10006', product: 'HC-500 Hydraulic Cyl Body', plant: 'Shawano', planQty: 8, actualQty: 6, planStart: '12 Mar', planEnd: '20 Mar', actStart: '12 Mar', actEnd: '--', var: -25.0, status: 'Behind' },
+  { wo: 'WO-2526-10006', product: 'HC-500 Hydraulic Cyl Body', plant: 'Coimbatore', planQty: 8, actualQty: 6, planStart: '12 Mar', planEnd: '20 Mar', actStart: '12 Mar', actEnd: '--', var: -25.0, status: 'Behind' },
   { wo: 'WO-2526-10007', product: 'BR-150 Aerospace Bracket', plant: 'Hosur', planQty: 80, actualQty: 74, planStart: '14 Mar', planEnd: '24 Mar', actStart: '14 Mar', actEnd: '--', var: -7.5, status: 'In Progress' },
   { wo: 'WO-2526-10008', product: 'PA-880 Hub Assembly', plant: 'Pune', planQty: 12, actualQty: 12, planStart: '16 Mar', planEnd: '28 Mar', actStart: '16 Mar', actEnd: '--', var: 0.0, status: 'On Track' },
 ];

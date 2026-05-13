@@ -2,12 +2,12 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PROD_DATA = [
-  { product: 'PA-450 Hub Assembly', plant: 'Shawano', planned: 48, actual: 42, var: -12.5, mtdPlan: 180, mtdActual: 164, status: 'Behind' },
+  { product: 'IC-2024 Instrument Cluster', plant: 'Coimbatore', planned: 48, actual: 42, var: -12.5, mtdPlan: 180, mtdActual: 164, status: 'Behind' },
   { product: 'HC-250 Hydraulic Cyl Body', plant: 'Pune', planned: 24, actual: 18, var: -25.0, mtdPlan: 96, mtdActual: 78, status: 'Behind' },
   { product: 'BR-75 Aerospace Bracket', plant: 'Jamshedpur', planned: 120, actual: 115, var: -4.2, mtdPlan: 480, mtdActual: 462, status: 'On Track' },
   { product: 'PA-625 Hub Assembly', plant: 'Hosur', planned: 16, actual: 16, var: 0.0, mtdPlan: 64, mtdActual: 64, status: 'On Track' },
   { product: 'VSD-200 Controller', plant: 'Ahmedabad', planned: 200, actual: 195, var: -2.5, mtdPlan: 800, mtdActual: 788, status: 'On Track' },
-  { product: 'HC-500 Hydraulic Cyl Body', plant: 'Shawano', planned: 8, actual: 6, var: -25.0, mtdPlan: 32, mtdActual: 28, status: 'Behind' },
+  { product: 'HC-500 Hydraulic Cyl Body', plant: 'Coimbatore', planned: 8, actual: 6, var: -25.0, mtdPlan: 32, mtdActual: 28, status: 'Behind' },
   { product: 'BR-150 Aerospace Bracket', plant: 'Hosur', planned: 80, actual: 74, var: -7.5, mtdPlan: 320, mtdActual: 298, status: 'Behind' },
   { product: 'PA-880 Hub Assembly', plant: 'Pune', planned: 12, actual: 12, var: 0.0, mtdPlan: 48, mtdActual: 48, status: 'On Track' },
 ];

@@ -2,11 +2,11 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const TRACE_DATA = [
-  { serial: 'EG-4022-WIS', component: 'Male Rotor', partNo: 'EG22-ROT-M', batch: 'HT-4482', supplier: 'In-house CNC', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 3', status: 'Installed' },
-  { serial: 'EG-4022-WIS', component: 'Female Rotor', partNo: 'EG22-ROT-F', batch: 'HT-4483', supplier: 'In-house CNC', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 3', status: 'Installed' },
-  { serial: 'EG-4022-WIS', component: 'Housing Body', partNo: 'EG22-HSG-01', batch: 'CST-2289', supplier: 'Samam Castings', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 5', status: 'Installed' },
-  { serial: 'EG-4022-WIS', component: 'SKF 6210-2Z Bearing', partNo: 'BRG-6210-2Z', batch: 'BRG-7741', supplier: 'SKF India', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 6', status: 'Installed' },
-  { serial: 'EG-4022-WIS', component: 'Shaft Seal Kit', partNo: 'EG22-SEAL-01', batch: 'SK-1128', supplier: 'Freudenberg India', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 4', status: 'Installed' },
+  { serial: 'IC-4022-PCL', component: 'Male Rotor', partNo: 'IC24-PCB-M', batch: 'HT-4482', supplier: 'In-house CNC', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 3', status: 'Installed' },
+  { serial: 'IC-4022-PCL', component: 'Female Rotor', partNo: 'EG22-ROT-F', batch: 'HT-4483', supplier: 'In-house CNC', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 3', status: 'Installed' },
+  { serial: 'IC-4022-PCL', component: 'Housing Body', partNo: 'EG22-HSG-01', batch: 'CST-2289', supplier: 'Samam Castings', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 5', status: 'Installed' },
+  { serial: 'IC-4022-PCL', component: 'SKF 6210-2Z Bearing', partNo: 'BRG-6210-2Z', batch: 'BRG-7741', supplier: 'SKF India', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 6', status: 'Installed' },
+  { serial: 'IC-4022-PCL', component: 'Shaft Seal Kit', partNo: 'EG22-SEAL-01', batch: 'SK-1128', supplier: 'Freudenberg India', wo: 'WO-2526-10001', date: '23 Mar 2026', station: 'Stn 4', status: 'Installed' },
   { serial: 'AB-3018-HSR', component: 'Scroll Element', partNo: 'AB30-SCR-01', batch: 'HT-4490', supplier: 'In-house CNC', wo: 'WO-2526-10006', date: '23 Mar 2026', station: 'Stn 7', status: 'Installed' },
   { serial: 'AB-3018-HSR', component: 'Motor Assembly', partNo: 'AB30-MOT-01', batch: 'MOT-8842', supplier: 'Siemens India', wo: 'WO-2526-10006', date: '23 Mar 2026', station: 'Stn 8', status: 'Installed' },
   { serial: 'TS-1055-PNE', component: 'Piston Kit', partNo: 'TS5-PST-01', batch: 'PK-3321', supplier: 'In-house CNC', wo: 'WO-2526-10003', date: '22 Mar 2026', station: 'Stn 11', status: 'Installed' },

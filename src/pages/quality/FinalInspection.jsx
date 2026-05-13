@@ -19,7 +19,7 @@ const CHECKLIST = [
 const RESULTS = ['Pass', 'Fail'];
 
 export default function FinalInspection() {
-  const [woInfo] = useState({ wo: 'WO-2526-0412', part: 'PA-450', qty: 6, line: 'Assembly Line 2' });
+  const [woInfo] = useState({ wo: 'WO-2526-0412', part: 'IC-2024', qty: 6, line: 'Assembly Line 2' });
   const [checks, setChecks] = useState(CHECKLIST);
   const [disposition, setDisposition] = useState('Accept');
   const [remarks, setRemarks] = useState({});
