@@ -7,10 +7,10 @@ const INVENTORY_DATA = [
   { code: 'CI-CST-5HP', desc: 'CI Casting Body 5HP', category: 'Castings', uom: 'Nos', onHand: 86, allocated: 120, available: -34, reorder: 60, value: 'INR 3.4L', location: 'RM-B2-07', status: 'Shortage' },
   { code: 'CW-1.2MM', desc: 'Copper Winding Wire 1.2mm', category: 'Raw Material', uom: 'Kg', onHand: 180, allocated: 96, available: 84, reorder: 50, value: 'INR 1.6L', location: 'RM-C1-02', status: 'OK' },
   { code: 'BRG-6210', desc: 'SKF 6210-2Z Bearing', category: 'Bought Out', uom: 'Nos', onHand: 68, allocated: 48, available: 20, reorder: 30, value: 'INR 2.0L', location: 'RM-D1-05', status: 'OK' },
-  { code: 'GS-EG37', desc: 'Gasket Set PA-625', category: 'Bought Out', uom: 'Sets', onHand: 24, allocated: 32, available: -8, reorder: 20, value: 'INR 0.4L', location: 'RM-A3-09', status: 'Shortage' },
+  { code: 'GS-EG37', desc: 'Gasket Set AQ-C300', category: 'Bought Out', uom: 'Sets', onHand: 24, allocated: 32, available: -8, reorder: 20, value: 'INR 0.4L', location: 'RM-A3-09', status: 'Shortage' },
   { code: 'ADC-COVER', desc: 'Aluminium Die Cast Cover', category: 'Castings', uom: 'Nos', onHand: 142, allocated: 72, available: 70, reorder: 50, value: 'INR 5.7L', location: 'RM-B1-04', status: 'OK' },
   { code: 'EP-RAL5015', desc: 'Epoxy Paint RAL 5015', category: 'Consumables', uom: 'Ltr', onHand: 220, allocated: 80, available: 140, reorder: 100, value: 'INR 1.1L', location: 'RM-E1-01', status: 'OK' },
-  { code: 'SL-EG22', desc: 'Shaft Seal Kit PA-450', category: 'Bought Out', uom: 'Sets', onHand: 18, allocated: 48, available: -30, reorder: 40, value: 'INR 0.5L', location: 'RM-A3-12', status: 'Shortage' },
+  { code: 'SL-EG22', desc: 'Shaft Seal Kit AQ-C200', category: 'Bought Out', uom: 'Sets', onHand: 18, allocated: 48, available: -30, reorder: 40, value: 'INR 0.5L', location: 'RM-A3-12', status: 'Shortage' },
   { code: 'VFD-ABB', desc: 'ABB VFD 200kW Module', category: 'Bought Out', uom: 'Nos', onHand: 12, allocated: 8, available: 4, reorder: 10, value: 'INR 14.4L', location: 'RM-D2-01', status: 'Low' },
 ];
 

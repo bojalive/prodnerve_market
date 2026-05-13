@@ -2,13 +2,13 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PROGRAMS = [
-  { id: 'O1001', name: 'EG22-ROTOR-OP10', machine: 'CNC-A01', part: 'PA-450 Rotor', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '8m 42s', status: 'Active' },
-  { id: 'O1002', name: 'EG22-ROTOR-OP20', machine: 'CNC-A01', part: 'PA-450 Rotor', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '6m 18s', status: 'Active' },
-  { id: 'O2001', name: 'TS5-BODY-OP10', machine: 'CNC-A02', part: 'BR-75 Body', rev: 'B2', author: 'Greg S', verified: '12 Mar 2026', cycleTime: '4m 55s', status: 'Active' },
-  { id: 'O2002', name: 'TS5-BODY-OP20', machine: 'VMC-B01', part: 'BR-75 Body', rev: 'B2', author: 'Greg S', verified: '12 Mar 2026', cycleTime: '7m 30s', status: 'Active' },
-  { id: 'O3001', name: 'AB30-STATOR-OP10', machine: 'CNC-A03', part: 'HC-500 Stator', rev: 'A1', author: 'Pradeep M', verified: '20 Mar 2026', cycleTime: '12m 05s', status: 'Under Review' },
-  { id: 'O3002', name: 'EG37-HOUSING-OP10', machine: 'VMC-B02', part: 'PA-625 Housing', rev: 'D1', author: 'Ryan T', verified: '15 Mar 2026', cycleTime: '14m 22s', status: 'Active' },
-  { id: 'O4001', name: 'EG55-SHAFT-OP10', machine: 'CNC-A05', part: 'PA-880 Shaft', rev: 'B1', author: 'Greg S', verified: '10 Mar 2026', cycleTime: '9m 48s', status: 'Active' },
+  { id: 'O1001', name: 'EG22-ROTOR-OP10', machine: 'CNC-A01', part: 'AQ-C200 Impeller', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '8m 42s', status: 'Active' },
+  { id: 'O1002', name: 'EG22-ROTOR-OP20', machine: 'CNC-A01', part: 'AQ-C200 Impeller', rev: 'C3', author: 'Ryan T', verified: '18 Mar 2026', cycleTime: '6m 18s', status: 'Active' },
+  { id: 'O2001', name: 'TS5-BODY-OP10', machine: 'CNC-A02', part: 'AQ-JT75 Body', rev: 'B2', author: 'Greg S', verified: '12 Mar 2026', cycleTime: '4m 55s', status: 'Active' },
+  { id: 'O2002', name: 'TS5-BODY-OP20', machine: 'VMC-B01', part: 'AQ-JT75 Body', rev: 'B2', author: 'Greg S', verified: '12 Mar 2026', cycleTime: '7m 30s', status: 'Active' },
+  { id: 'O3001', name: 'AB30-STATOR-OP10', machine: 'CNC-A03', part: 'AQ-OW400 Impeller', rev: 'A1', author: 'Pradeep M', verified: '20 Mar 2026', cycleTime: '12m 05s', status: 'Under Review' },
+  { id: 'O3002', name: 'EG37-HOUSING-OP10', machine: 'VMC-B02', part: 'AQ-C300 Casing', rev: 'D1', author: 'Ryan T', verified: '15 Mar 2026', cycleTime: '14m 22s', status: 'Active' },
+  { id: 'O4001', name: 'EG55-SHAFT-OP10', machine: 'CNC-A05', part: 'AQ-S500 Shaft', rev: 'B1', author: 'Greg S', verified: '10 Mar 2026', cycleTime: '9m 48s', status: 'Active' },
   { id: 'O4002', name: 'VSD200-BRACKET', machine: 'VMC-B01', part: 'VSD-200 Bracket', rev: 'A2', author: 'Pradeep M', verified: '08 Mar 2026', cycleTime: '3m 15s', status: 'Obsolete' },
 ];
 

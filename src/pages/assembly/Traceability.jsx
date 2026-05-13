@@ -10,7 +10,7 @@ const TRACE_DATA = [
   { serial: 'AB-3018-HSR', component: 'Scroll Element', partNo: 'AB30-SCR-01', batch: 'HT-4490', supplier: 'In-house CNC', wo: 'WO-2526-10006', date: '23 Mar 2026', station: 'Stn 7', status: 'Installed' },
   { serial: 'AB-3018-HSR', component: 'Motor Assembly', partNo: 'AB30-MOT-01', batch: 'MOT-8842', supplier: 'Siemens India', wo: 'WO-2526-10006', date: '23 Mar 2026', station: 'Stn 8', status: 'Installed' },
   { serial: 'TS-1055-PNE', component: 'Piston Kit', partNo: 'TS5-PST-01', batch: 'PK-3321', supplier: 'In-house CNC', wo: 'WO-2526-10003', date: '22 Mar 2026', station: 'Stn 11', status: 'Installed' },
-  { serial: 'TS-1055-PNE', component: 'Connecting Rod', partNo: 'TS5-CON-01', batch: 'CR-2204', supplier: 'Bharat Forge', wo: 'WO-2526-10003', date: '22 Mar 2026', station: 'Stn 11', status: 'Installed' },
+  { serial: 'TS-1055-PNE', component: 'Connecting Rod', partNo: 'TS5-CON-01', batch: 'CR-2204', supplier: 'L&T Infrastructure', wo: 'WO-2526-10003', date: '22 Mar 2026', station: 'Stn 11', status: 'Installed' },
   { serial: 'VSD-6014-JMP', component: 'VFD Controller', partNo: 'VSD200-VFD', batch: 'VFD-0548', supplier: 'ABB India', wo: 'WO-2526-10005', date: '22 Mar 2026', station: 'Stn 10', status: 'Installed' },
 ];
 

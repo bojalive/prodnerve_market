@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { MI, FormField, SectionLabel } from '../../components/ui';
 
 const PRODUCTS = [
-  'PA-225 Hub Assembly', 'PA-450 Hub Assembly', 'PA-625 Hub Assembly', 'PA-880 Hub Assembly',
-  'HC-100 Hydraulic Cyl Body', 'HC-250 Hydraulic Cyl Body', 'HC-500 Hydraulic Cyl Body',
-  'BR-75 Aerospace Bracket', 'BR-150 Aerospace Bracket', 'BR-300 Aerospace Bracket',
+  'AQ-C100 Centrifugal Pump', 'AQ-C200 Centrifugal Pump', 'AQ-C300 Centrifugal Pump', 'AQ-S500 Submersible Pump',
+  'AQ-M150 Monoblock Pump', 'AQ-M250 Monoblock Pump', 'AQ-OW400 Openwell Pump',
+  'AQ-JT75 Jet Pump', 'AQ-JT150 Jet Pump', 'AQ-BS300 Booster Pump',
   'VSD-100 Controller', 'VSD-200 Controller',
 ];
-const PLANTS = ['Shawano', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
-const ROUTINGS = ['RT-CNC-STD (CNC Mill Standard)', 'RT-CNC-HVY (CNC Mill Heavy Duty)', 'RT-TRN-STD (CNC Turning Standard)', 'RT-GRD-STD (Grinding Standard)', 'RT-FIN-INS (Finishing & Inspection)'];
+const PLANTS = ['Coimbatore', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
+const ROUTINGS = ['RT-PMP-STD (Pump Assembly Standard)', 'RT-CNC-HVY (CNC Mill Heavy Duty)', 'RT-IMP-STD (Impeller Machining Standard)', 'RT-SHF-STD (Shaft Grinding Standard)', 'RT-FIN-INS (Finishing & Inspection)'];
 const UOMS = ['Nos', 'Sets', 'Kits'];
 const PRIORITIES = ['Low', 'Medium', 'High', 'Critical'];
 

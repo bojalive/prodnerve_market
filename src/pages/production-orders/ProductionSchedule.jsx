@@ -2,16 +2,16 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge, StatusDot } from '../../components/ui';
 
 const SCHEDULE = [
-  { job: 'JOB-4081', product: 'PA-450 Hub Assembly', qty: 48, machine: 'CNC Line A1', mon: [8, 8], tue: [8, 7], wed: [8, 8], thu: [8, 6], fri: [8, 0], sat: [8, 0] },
-  { job: 'JOB-4082', product: 'HC-250 Hydraulic Cyl Body', qty: 24, machine: 'Assembly B2', mon: [4, 4], tue: [4, 3], wed: [4, 4], thu: [4, 4], fri: [4, 0], sat: [4, 0] },
-  { job: 'JOB-4083', product: 'BR-75 Aerospace Bracket', qty: 120, machine: 'Press Line C1', mon: [20, 20], tue: [20, 18], wed: [20, 20], thu: [20, 19], fri: [20, 0], sat: [20, 0] },
-  { job: 'JOB-4084', product: 'PA-625 Hub Assembly', qty: 16, machine: 'CNC Line A2', mon: [3, 3], tue: [3, 2], wed: [3, 3], thu: [3, 3], fri: [2, 0], sat: [2, 0] },
+  { job: 'JOB-4081', product: 'AQ-C200 Centrifugal Pump', qty: 48, machine: 'CNC Line A1', mon: [8, 8], tue: [8, 7], wed: [8, 8], thu: [8, 6], fri: [8, 0], sat: [8, 0] },
+  { job: 'JOB-4082', product: 'AQ-M250 Monoblock Pump', qty: 24, machine: 'Assembly B2', mon: [4, 4], tue: [4, 3], wed: [4, 4], thu: [4, 4], fri: [4, 0], sat: [4, 0] },
+  { job: 'JOB-4083', product: 'AQ-JT75 Jet Pump', qty: 120, machine: 'Press Line C1', mon: [20, 20], tue: [20, 18], wed: [20, 20], thu: [20, 19], fri: [20, 0], sat: [20, 0] },
+  { job: 'JOB-4084', product: 'AQ-C300 Centrifugal Pump', qty: 16, machine: 'CNC Line A2', mon: [3, 3], tue: [3, 2], wed: [3, 3], thu: [3, 3], fri: [2, 0], sat: [2, 0] },
   { job: 'JOB-4085', product: 'VSD-200 Controller', qty: 200, machine: 'SMT Line D1', mon: [35, 35], tue: [35, 32], wed: [35, 34], thu: [35, 30], fri: [30, 0], sat: [30, 0] },
-  { job: 'JOB-4086', product: 'HC-500 Hydraulic Cyl Body', qty: 8, machine: 'Clean Room E1', mon: [2, 2], tue: [2, 1], wed: [2, 2], thu: [2, 0], fri: [0, 0], sat: [0, 0] },
-  { job: 'JOB-4087', product: 'BR-150 Aerospace Bracket', qty: 80, machine: 'Press Line C2', mon: [14, 14], tue: [14, 12], wed: [14, 14], thu: [14, 13], fri: [12, 0], sat: [12, 0] },
-  { job: 'JOB-4088', product: 'PA-880 Hub Assembly', qty: 12, machine: 'CNC Line A3', mon: [2, 2], tue: [2, 2], wed: [2, 2], thu: [2, 1], fri: [2, 0], sat: [2, 0] },
+  { job: 'JOB-4086', product: 'AQ-OW400 Openwell Pump', qty: 8, machine: 'Clean Room E1', mon: [2, 2], tue: [2, 1], wed: [2, 2], thu: [2, 0], fri: [0, 0], sat: [0, 0] },
+  { job: 'JOB-4087', product: 'AQ-JT150 Jet Pump', qty: 80, machine: 'Press Line C2', mon: [14, 14], tue: [14, 12], wed: [14, 14], thu: [14, 13], fri: [12, 0], sat: [12, 0] },
+  { job: 'JOB-4088', product: 'AQ-S500 Submersible Pump', qty: 12, machine: 'CNC Line A3', mon: [2, 2], tue: [2, 2], wed: [2, 2], thu: [2, 1], fri: [2, 0], sat: [2, 0] },
   { job: 'JOB-4089', product: 'VSD-100 Controller', qty: 350, machine: 'SMT Line D2', mon: [60, 58], tue: [60, 55], wed: [60, 60], thu: [60, 52], fri: [55, 0], sat: [55, 0] },
-  { job: 'JOB-4090', product: 'BR-300 Aerospace Bracket', qty: 60, machine: 'Press Line C3', mon: [10, 10], tue: [10, 9], wed: [10, 10], thu: [10, 10], fri: [10, 0], sat: [10, 0] },
+  { job: 'JOB-4090', product: 'AQ-BS300 Booster Pump', qty: 60, machine: 'Press Line C3', mon: [10, 10], tue: [10, 9], wed: [10, 10], thu: [10, 10], fri: [10, 0], sat: [10, 0] },
 ];
 
 function DayCell([planned, actual]) {

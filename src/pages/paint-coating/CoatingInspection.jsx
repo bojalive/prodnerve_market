@@ -2,12 +2,12 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const INSPECTION_DATA = [
-  { serial: 'EG-4022-WIS', wo: 'WO-2526-10001', product: 'PA-450', dftSpec: '60-80 \u00b5m', dftActual: 72, adhesion: '5B (Best)', gloss: 82, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'EG-4023-WIS', wo: 'WO-2526-10001', product: 'PA-450', dftSpec: '60-80 \u00b5m', dftActual: 68, adhesion: '5B (Best)', gloss: 80, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'TS-1055-PNE', wo: 'WO-2526-10003', product: 'BR-75', dftSpec: '50-70 \u00b5m', dftActual: 58, adhesion: '4B (Good)', gloss: 75, color: 'RAL 7035 (Pass)', visual: 'No defects', inspector: 'D. Vignesh', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'AB-3018-HSR', wo: 'WO-2526-10006', product: 'HC-500', dftSpec: '60-80 \u00b5m', dftActual: 82, adhesion: '5B (Best)', gloss: 78, color: 'RAL 5015 (Pass)', visual: 'Minor orange peel', inspector: 'R. Hansen', date: '23 Mar 2026', result: 'Pass' },
-  { serial: 'TS-1056-PNE', wo: 'WO-2526-10003', product: 'BR-75', dftSpec: '50-70 \u00b5m', dftActual: 45, adhesion: '3B (Fair)', gloss: 65, color: 'RAL 7035 (Pass)', visual: 'Thin spot on base', inspector: 'D. Vignesh', date: '22 Mar 2026', result: 'Fail' },
-  { serial: 'EG-4021-WIS', wo: 'WO-2526-10001', product: 'PA-450', dftSpec: '60-80 \u00b5m', dftActual: 74, adhesion: '5B (Best)', gloss: 84, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '22 Mar 2026', result: 'Pass' },
+  { serial: 'EG-4022-WIS', wo: 'WO-2526-10001', product: 'AQ-C200', dftSpec: '60-80 \u00b5m', dftActual: 72, adhesion: '5B (Best)', gloss: 82, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'EG-4023-WIS', wo: 'WO-2526-10001', product: 'AQ-C200', dftSpec: '60-80 \u00b5m', dftActual: 68, adhesion: '5B (Best)', gloss: 80, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'TS-1055-PNE', wo: 'WO-2526-10003', product: 'AQ-JT75', dftSpec: '50-70 \u00b5m', dftActual: 58, adhesion: '4B (Good)', gloss: 75, color: 'RAL 7035 (Pass)', visual: 'No defects', inspector: 'D. Vignesh', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'AB-3018-HSR', wo: 'WO-2526-10006', product: 'AQ-OW400', dftSpec: '60-80 \u00b5m', dftActual: 82, adhesion: '5B (Best)', gloss: 78, color: 'RAL 5015 (Pass)', visual: 'Minor orange peel', inspector: 'R. Hansen', date: '23 Mar 2026', result: 'Pass' },
+  { serial: 'TS-1056-PNE', wo: 'WO-2526-10003', product: 'AQ-JT75', dftSpec: '50-70 \u00b5m', dftActual: 45, adhesion: '3B (Fair)', gloss: 65, color: 'RAL 7035 (Pass)', visual: 'Thin spot on base', inspector: 'D. Vignesh', date: '22 Mar 2026', result: 'Fail' },
+  { serial: 'EG-4021-WIS', wo: 'WO-2526-10001', product: 'AQ-C200', dftSpec: '60-80 \u00b5m', dftActual: 74, adhesion: '5B (Best)', gloss: 84, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '22 Mar 2026', result: 'Pass' },
   { serial: 'VSD-6014-JMP', wo: 'WO-2526-10005', product: 'VSD-200', dftSpec: '40-60 \u00b5m', dftActual: 52, adhesion: '5B (Best)', gloss: 88, color: 'RAL 7016 (Pass)', visual: 'No defects', inspector: 'D. Vignesh', date: '22 Mar 2026', result: 'Pass' },
   { serial: 'DS-2089-AMD', wo: 'WO-2526-10008', product: 'DS-10', dftSpec: '60-80 \u00b5m', dftActual: 70, adhesion: '4B (Good)', gloss: 76, color: 'RAL 5015 (Pass)', visual: 'No defects', inspector: 'R. Hansen', date: '21 Mar 2026', result: 'Pass' },
 ];

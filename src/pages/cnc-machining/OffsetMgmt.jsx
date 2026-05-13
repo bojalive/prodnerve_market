@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
 const OFFSETS = [
-  { machine: 'CNC-A01', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.012, limit: 0.050, updatedBy: 'Mike R', time: '23 Mar 14:10', status: 'OK' },
-  { machine: 'CNC-A01', tool: 'T03', type: 'Wear', axis: 'Z', nominal: 0.000, current: -0.024, limit: 0.050, updatedBy: 'Mike R', time: '23 Mar 14:10', status: 'OK' },
-  { machine: 'CNC-A01', tool: 'T07', type: 'Geometry', axis: 'X', nominal: -42.580, current: -42.592, limit: 0.030, updatedBy: 'Mike R', time: '23 Mar 11:30', status: 'Warn' },
-  { machine: 'CNC-A02', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.008, limit: 0.050, updatedBy: 'Scott M', time: '23 Mar 13:45', status: 'OK' },
-  { machine: 'CNC-A02', tool: 'T04', type: 'Geometry', axis: 'Z', nominal: -88.140, current: -88.148, limit: 0.020, updatedBy: 'Scott M', time: '23 Mar 10:20', status: 'OK' },
-  { machine: 'CNC-A02', tool: 'T09', type: 'Wear', axis: 'Z', nominal: 0.000, current: -0.038, limit: 0.050, updatedBy: 'Scott M', time: '23 Mar 09:00', status: 'Warn' },
-  { machine: 'VMC-B01', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.015, limit: 0.040, updatedBy: 'Karl V', time: '23 Mar 12:15', status: 'OK' },
-  { machine: 'VMC-B01', tool: 'T05', type: 'Length', axis: 'Z', nominal: -152.340, current: -152.352, limit: 0.030, updatedBy: 'Karl V', time: '23 Mar 08:45', status: 'OK' },
-  { machine: 'VMC-B02', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.042, limit: 0.050, updatedBy: 'Steve P', time: '23 Mar 11:00', status: 'Warn' },
-  { machine: 'VMC-B02', tool: 'T08', type: 'Geometry', axis: 'Z', nominal: -76.220, current: -76.225, limit: 0.015, updatedBy: 'Steve P', time: '23 Mar 08:30', status: 'OK' },
+  { machine: 'CNC-A01', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.012, limit: 0.050, updatedBy: 'Murugan R', time: '23 Mar 14:10', status: 'OK' },
+  { machine: 'CNC-A01', tool: 'T03', type: 'Wear', axis: 'Z', nominal: 0.000, current: -0.024, limit: 0.050, updatedBy: 'Murugan R', time: '23 Mar 14:10', status: 'OK' },
+  { machine: 'CNC-A01', tool: 'T07', type: 'Geometry', axis: 'X', nominal: -42.580, current: -42.592, limit: 0.030, updatedBy: 'Murugan R', time: '23 Mar 11:30', status: 'Warn' },
+  { machine: 'CNC-A02', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.008, limit: 0.050, updatedBy: 'Senthil M', time: '23 Mar 13:45', status: 'OK' },
+  { machine: 'CNC-A02', tool: 'T04', type: 'Geometry', axis: 'Z', nominal: -88.140, current: -88.148, limit: 0.020, updatedBy: 'Senthil M', time: '23 Mar 10:20', status: 'OK' },
+  { machine: 'CNC-A02', tool: 'T09', type: 'Wear', axis: 'Z', nominal: 0.000, current: -0.038, limit: 0.050, updatedBy: 'Senthil M', time: '23 Mar 09:00', status: 'Warn' },
+  { machine: 'VMC-B01', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.015, limit: 0.040, updatedBy: 'Karthik V', time: '23 Mar 12:15', status: 'OK' },
+  { machine: 'VMC-B01', tool: 'T05', type: 'Length', axis: 'Z', nominal: -152.340, current: -152.352, limit: 0.030, updatedBy: 'Karthik V', time: '23 Mar 08:45', status: 'OK' },
+  { machine: 'VMC-B02', tool: 'T01', type: 'Wear', axis: 'X', nominal: 0.000, current: -0.042, limit: 0.050, updatedBy: 'Suresh P', time: '23 Mar 11:00', status: 'Warn' },
+  { machine: 'VMC-B02', tool: 'T08', type: 'Geometry', axis: 'Z', nominal: -76.220, current: -76.225, limit: 0.015, updatedBy: 'Suresh P', time: '23 Mar 08:30', status: 'OK' },
 ];
 
 const STATUS_COLOR = { OK: 'green', Warn: 'amber', Limit: 'red' };

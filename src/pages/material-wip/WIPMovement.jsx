@@ -12,14 +12,14 @@ const WIP_STAGES = [
 ];
 
 const MOVEMENTS = [
-  { id: 'WM-10001', wo: 'WO-2526-10001', from: 'CNC Machining', to: 'Grinding', qty: 24, bin: 'BIN-A042', qc: 'Passed', movedBy: 'Scott M', time: '23 Mar 14:22' },
-  { id: 'WM-10002', wo: 'WO-2526-10003', from: 'Raw Store', to: 'CNC Machining', qty: 60, bin: 'BIN-B018', qc: 'Passed', movedBy: 'Karl V', time: '23 Mar 13:45' },
-  { id: 'WM-10003', wo: 'WO-2526-10006', from: 'Assembly', to: 'Testing', qty: 4, bin: 'BIN-C007', qc: 'Conditional', movedBy: 'Steve P', time: '23 Mar 12:30' },
-  { id: 'WM-10004', wo: 'WO-2526-10008', from: 'Grinding', to: 'Assembly', qty: 6, bin: 'BIN-A055', qc: 'Passed', movedBy: 'Dan N', time: '23 Mar 11:18' },
-  { id: 'WM-10005', wo: 'WO-2526-10011', from: 'Testing', to: 'Packing / Dispatch', qty: 12, bin: 'BIN-D003', qc: 'Passed', movedBy: 'Scott M', time: '23 Mar 10:05' },
-  { id: 'WM-10006', wo: 'WO-2526-10002', from: 'CNC Machining', to: 'Grinding', qty: 8, bin: 'BIN-A061', qc: 'Passed', movedBy: 'Karl V', time: '23 Mar 09:40' },
-  { id: 'WM-10007', wo: 'WO-2526-10007', from: 'Paint / Coating', to: 'Testing', qty: 20, bin: 'BIN-C012', qc: 'Passed', movedBy: 'Steve P', time: '23 Mar 08:50' },
-  { id: 'WM-10008', wo: 'WO-2526-10004', from: 'Assembly', to: 'Paint / Coating', qty: 8, bin: 'BIN-B024', qc: 'Conditional', movedBy: 'Dan N', time: '22 Mar 16:15' },
+  { id: 'WM-10001', wo: 'WO-2526-10001', from: 'CNC Machining', to: 'Grinding', qty: 24, bin: 'BIN-A042', qc: 'Passed', movedBy: 'Senthil M', time: '23 Mar 14:22' },
+  { id: 'WM-10002', wo: 'WO-2526-10003', from: 'Raw Store', to: 'CNC Machining', qty: 60, bin: 'BIN-B018', qc: 'Passed', movedBy: 'Karthik V', time: '23 Mar 13:45' },
+  { id: 'WM-10003', wo: 'WO-2526-10006', from: 'Assembly', to: 'Testing', qty: 4, bin: 'BIN-C007', qc: 'Conditional', movedBy: 'Suresh P', time: '23 Mar 12:30' },
+  { id: 'WM-10004', wo: 'WO-2526-10008', from: 'Grinding', to: 'Assembly', qty: 6, bin: 'BIN-A055', qc: 'Passed', movedBy: 'Dinesh N', time: '23 Mar 11:18' },
+  { id: 'WM-10005', wo: 'WO-2526-10011', from: 'Testing', to: 'Packing / Dispatch', qty: 12, bin: 'BIN-D003', qc: 'Passed', movedBy: 'Senthil M', time: '23 Mar 10:05' },
+  { id: 'WM-10006', wo: 'WO-2526-10002', from: 'CNC Machining', to: 'Grinding', qty: 8, bin: 'BIN-A061', qc: 'Passed', movedBy: 'Karthik V', time: '23 Mar 09:40' },
+  { id: 'WM-10007', wo: 'WO-2526-10007', from: 'Paint / Coating', to: 'Testing', qty: 20, bin: 'BIN-C012', qc: 'Passed', movedBy: 'Suresh P', time: '23 Mar 08:50' },
+  { id: 'WM-10008', wo: 'WO-2526-10004', from: 'Assembly', to: 'Paint / Coating', qty: 8, bin: 'BIN-B024', qc: 'Conditional', movedBy: 'Dinesh N', time: '22 Mar 16:15' },
 ];
 
 const QC_COLOR = { Passed: 'green', Conditional: 'amber' };

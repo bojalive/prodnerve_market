@@ -14,7 +14,7 @@ const MOCK_CHARS = [
 
 export default function FAInspection() {
   const [form, setForm] = useState({
-    wo: 'WO-2526-0347', part: 'PA-450-ROTOR-A', op: 'OP-30 Finish Turning',
+    wo: 'WO-2526-0347', part: 'AQ-C200-ROTOR-A', op: 'OP-30 Finish Turning',
     machine: 'CNC-TURN-04', inspector: 'Arun Balaji',
   });
   const [chars, setChars] = useState(MOCK_CHARS);
@@ -66,7 +66,7 @@ export default function FAInspection() {
 
       {/* Measurement table */}
       <DataTable
-        title="Measurement Results \u2014 Component Rotor PA-450"
+        title="Measurement Results \u2014 Component Rotor AQ-C200"
         headers={['Sr#', 'Characteristic', 'Spec', 'USL', 'LSL', 'Gauge', 'Actual Value', 'Result']}
         rows={chars.map((c, i) => {
           const res = getResult(c);
