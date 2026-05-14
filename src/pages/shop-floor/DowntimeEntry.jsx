@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
 const DOWNTIME_EVENTS = [
-  { id: 'DT-5001', machine: 'CNC-A06', start: '23 Mar 08:20', end: '23 Mar 10:45', dur: '2h 25m', l1: 'Equipment', l2: 'Spindle', l3: 'Bearing failure', wo: 'WO-2526-10003', operator: 'Scott M', status: 'Closed' },
-  { id: 'DT-5002', machine: 'TST-E02', start: '23 Mar 09:10', end: '--', dur: '5h 12m+', l1: 'Equipment', l2: 'Hydraulic', l3: 'Pump leak', wo: 'WO-2526-10004', operator: 'Steve P', status: 'Open' },
-  { id: 'DT-5003', machine: 'CNC-A04', start: '23 Mar 11:00', end: '23 Mar 12:15', dur: '1h 15m', l1: 'Changeover', l2: 'Tool', l3: 'New program load', wo: 'WO-2526-10012', operator: 'Mike R', status: 'Closed' },
-  { id: 'DT-5004', machine: 'GRD-C03', start: '23 Mar 07:30', end: '23 Mar 08:45', dur: '1h 15m', l1: 'Changeover', l2: 'Fixture', l3: 'Fixture swap', wo: 'WO-2526-10008', operator: 'Karl V', status: 'Closed' },
+  { id: 'DT-5001', machine: 'CNC-A06', start: '23 Mar 08:20', end: '23 Mar 10:45', dur: '2h 25m', l1: 'Equipment', l2: 'Spindle', l3: 'Bearing failure', wo: 'WO-2526-10003', operator: 'Shankar M', status: 'Closed' },
+  { id: 'DT-5002', machine: 'TST-E02', start: '23 Mar 09:10', end: '--', dur: '5h 12m+', l1: 'Equipment', l2: 'Hydraulic', l3: 'Pump leak', wo: 'WO-2526-10004', operator: 'Sathish P', status: 'Open' },
+  { id: 'DT-5003', machine: 'CNC-A04', start: '23 Mar 11:00', end: '23 Mar 12:15', dur: '1h 15m', l1: 'Changeover', l2: 'Tool', l3: 'New program load', wo: 'WO-2526-10012', operator: 'Harish R', status: 'Closed' },
+  { id: 'DT-5004', machine: 'GRD-C03', start: '23 Mar 07:30', end: '23 Mar 08:45', dur: '1h 15m', l1: 'Changeover', l2: 'Fixture', l3: 'Fixture swap', wo: 'WO-2526-10008', operator: 'Karthikeyan V', status: 'Closed' },
   { id: 'DT-5005', machine: 'VMC-B03', start: '23 Mar 06:00', end: '--', dur: '8h 22m+', l1: 'No Order', l2: 'Planning', l3: 'Awaiting WO release', wo: '--', operator: '--', status: 'Open' },
-  { id: 'DT-5006', machine: 'ASM-D03', start: '23 Mar 10:30', end: '--', dur: '3h 52m+', l1: 'Material', l2: 'Shortage', l3: 'Waiting for castings', wo: 'WO-2526-10011', operator: 'Andrew S', status: 'Open' },
-  { id: 'DT-5007', machine: 'CNC-A01', start: '23 Mar 06:15', end: '23 Mar 06:45', dur: '0h 30m', l1: 'Quality', l2: 'Inspection', l3: 'First article check', wo: 'WO-2526-10001', operator: 'Mike R', status: 'Closed' },
-  { id: 'DT-5008', machine: 'PNT-F01', start: '23 Mar 13:00', end: '23 Mar 13:40', dur: '0h 40m', l1: 'Equipment', l2: 'Spray Gun', l3: 'Nozzle clog', wo: 'WO-2526-10007', operator: 'Dan N', status: 'Closed' },
+  { id: 'DT-5006', machine: 'ASM-D03', start: '23 Mar 10:30', end: '--', dur: '3h 52m+', l1: 'Material', l2: 'Shortage', l3: 'Waiting for castings', wo: 'WO-2526-10011', operator: 'Aravind S', status: 'Open' },
+  { id: 'DT-5007', machine: 'CNC-A01', start: '23 Mar 06:15', end: '23 Mar 06:45', dur: '0h 30m', l1: 'Quality', l2: 'Inspection', l3: 'First article check', wo: 'WO-2526-10001', operator: 'Harish R', status: 'Closed' },
+  { id: 'DT-5008', machine: 'PNT-F01', start: '23 Mar 13:00', end: '23 Mar 13:40', dur: '0h 40m', l1: 'Equipment', l2: 'Spray Gun', l3: 'Nozzle clog', wo: 'WO-2526-10007', operator: 'Deepak N', status: 'Closed' },
 ];
 
 const STATUS_COLOR = { Open: 'red', Closed: 'green' };

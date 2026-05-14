@@ -2,15 +2,15 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const OT_ENTRIES = [
-  { id: 'OT-3001', empId: 'EMP-1063', name: 'V. Rajan', dept: 'Grinding', shift: 'A', date: '23 Mar', hours: 2.3, reason: 'Urgent WO-2526-10001 completion', approvedBy: 'Mike R', rate: '1.5x', amount: '1,035', status: 'Approved' },
-  { id: 'OT-3002', empId: 'EMP-1135', name: 'N. Stan', dept: 'Testing', shift: 'A', date: '23 Mar', hours: 3.5, reason: 'Performance test EG-4022-WIS', approvedBy: 'Scott M', rate: '1.5x', amount: '1,575', status: 'Approved' },
+  { id: 'OT-3001', empId: 'EMP-1063', name: 'V. Rajan', dept: 'Grinding', shift: 'A', date: '23 Mar', hours: 2.3, reason: 'Urgent WO-2526-10001 completion', approvedBy: 'Harish R', rate: '1.5x', amount: '1,035', status: 'Approved' },
+  { id: 'OT-3002', empId: 'EMP-1135', name: 'N. Stan', dept: 'Testing', shift: 'A', date: '23 Mar', hours: 3.5, reason: 'Performance test EG-4022-WIS', approvedBy: 'Shankar M', rate: '1.5x', amount: '1,575', status: 'Approved' },
   { id: 'OT-3003', empId: 'EMP-1218', name: 'P. Dhanush', dept: 'Maintenance', shift: 'A', date: '23 Mar', hours: 4.2, reason: 'CNC-A06 spindle bearing repair', approvedBy: 'Greg T', rate: '2.0x', amount: '2,520', status: 'Approved' },
-  { id: 'OT-3004', empId: 'EMP-1042', name: 'M. Kannan', dept: 'CNC Bay 1', shift: 'A', date: '22 Mar', hours: 2.0, reason: 'Setup for new program O3001', approvedBy: 'Mike R', rate: '1.5x', amount: '900', status: 'Approved' },
-  { id: 'OT-3005', empId: 'EMP-1078', name: 'K. Devi', dept: 'Assembly', shift: 'A', date: '22 Mar', hours: 3.0, reason: 'Assembly backlog clearance', approvedBy: 'Scott M', rate: '1.5x', amount: '1,350', status: 'Approved' },
-  { id: 'OT-3006', empId: 'EMP-1152', name: 'R. Karl', dept: 'CNC Bay 2', shift: 'A', date: '22 Mar', hours: 1.5, reason: 'Urgent part for maintenance', approvedBy: 'Mike R', rate: '1.5x', amount: '675', status: 'Approved' },
-  { id: 'OT-3007', empId: 'EMP-1129', name: 'T. Greg', dept: 'Assembly', shift: 'B', date: '21 Mar', hours: 2.5, reason: 'HC-500 assembly completion', approvedBy: 'Andrew S', rate: '1.5x', amount: '1,125', status: 'Approved' },
-  { id: 'OT-3008', empId: 'EMP-1055', name: 'R. Hansen', dept: 'CNC Bay 1', shift: 'A', date: '21 Mar', hours: 4.0, reason: 'Saturday production shift', approvedBy: 'Mike R', rate: '2.0x', amount: '2,400', status: 'Pending' },
-  { id: 'OT-3009', empId: 'EMP-1165', name: 'M. Patrick', dept: 'Grinding', shift: 'B', date: '21 Mar', hours: 2.0, reason: 'Grinding backlog', approvedBy: 'Andrew S', rate: '1.5x', amount: '900', status: 'Approved' },
+  { id: 'OT-3004', empId: 'EMP-1042', name: 'M. Kannan', dept: 'CNC Bay 1', shift: 'A', date: '22 Mar', hours: 2.0, reason: 'Setup for new program O3001', approvedBy: 'Harish R', rate: '1.5x', amount: '900', status: 'Approved' },
+  { id: 'OT-3005', empId: 'EMP-1078', name: 'K. Devi', dept: 'Assembly', shift: 'A', date: '22 Mar', hours: 3.0, reason: 'Assembly backlog clearance', approvedBy: 'Shankar M', rate: '1.5x', amount: '1,350', status: 'Approved' },
+  { id: 'OT-3006', empId: 'EMP-1152', name: 'R. Karl', dept: 'CNC Bay 2', shift: 'A', date: '22 Mar', hours: 1.5, reason: 'Urgent part for maintenance', approvedBy: 'Harish R', rate: '1.5x', amount: '675', status: 'Approved' },
+  { id: 'OT-3007', empId: 'EMP-1129', name: 'T. Greg', dept: 'Assembly', shift: 'B', date: '21 Mar', hours: 2.5, reason: 'HC-500 assembly completion', approvedBy: 'Aravind S', rate: '1.5x', amount: '1,125', status: 'Approved' },
+  { id: 'OT-3008', empId: 'EMP-1055', name: 'R. Hansen', dept: 'CNC Bay 1', shift: 'A', date: '21 Mar', hours: 4.0, reason: 'Saturday production shift', approvedBy: 'Harish R', rate: '2.0x', amount: '2,400', status: 'Pending' },
+  { id: 'OT-3009', empId: 'EMP-1165', name: 'M. Patrick', dept: 'Grinding', shift: 'B', date: '21 Mar', hours: 2.0, reason: 'Grinding backlog', approvedBy: 'Aravind S', rate: '1.5x', amount: '900', status: 'Approved' },
   { id: 'OT-3010', empId: 'EMP-1244', name: 'S. Dinesh', dept: 'Maintenance', shift: 'B', date: '20 Mar', hours: 3.0, reason: 'GRD-C04 motor rewind support', approvedBy: 'Greg T', rate: '1.5x', amount: '1,350', status: 'Approved' },
 ];
 
