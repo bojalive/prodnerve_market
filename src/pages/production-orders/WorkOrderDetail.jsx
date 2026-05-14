@@ -2,8 +2,8 @@ import React from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, Badge, StatusDot } from '../../components/ui';
 
 const WO = {
-  wo: 'WO-2526-10001', product: 'PA-450 Hub Assembly', customer: 'Deere & Company Ltd',
-  plant: 'Shawano', status: 'In Progress', priority: 'High',
+  wo: 'WO-2526-10001', product: 'PA-450 Hub Assembly', customer: 'Toyota Kirloskar',
+  plant: 'Coimbatore', status: 'In Progress', priority: 'High',
   orderQty: 48, completed: 38, rejected: 2, yield: 95.0,
 };
 

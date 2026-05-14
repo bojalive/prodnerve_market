@@ -2,11 +2,11 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const CERTIFICATES = [
-  { certNo: 'TC-2026-04881', serial: 'EG-4022-WIS', product: 'PA-450 Hub Assembly', customer: 'Deere & Company Ltd', tests: 'Perf + NV + SV', wo: 'WO-2526-10001', issuedBy: 'Kelly S', date: '23 Mar 2026', status: 'Issued' },
-  { certNo: 'TC-2026-04882', serial: 'AB-3018-HSR', product: 'HC-500 Hydraulic Cyl Body', customer: 'Caterpillar Inc', tests: 'Perf + NV + SV', wo: 'WO-2526-10006', issuedBy: 'Kelly S', date: '23 Mar 2026', status: 'Draft' },
-  { certNo: 'TC-2026-04879', serial: 'TS-1056-PNE', product: 'BR-75 Aerospace Bracket', customer: 'Kohler Co', tests: 'Perf + SV', wo: 'WO-2526-10003', issuedBy: 'Ryan P', date: '22 Mar 2026', status: 'Issued' },
-  { certNo: 'TC-2026-04878', serial: 'EG-4021-WIS', product: 'PA-450 Hub Assembly', customer: 'Deere & Company Ltd', tests: 'Perf + NV + SV', wo: 'WO-2526-10001', issuedBy: 'Kelly S', date: '22 Mar 2026', status: 'Issued' },
-  { certNo: 'TC-2026-04875', serial: 'DS-2089-AMD', product: 'FT-100 Filter Housing', customer: 'Honeywell Inc', tests: 'Perf + SV + Dew Point', wo: 'WO-2526-10008', issuedBy: 'Ryan P', date: '21 Mar 2026', status: 'Issued' },
+  { certNo: 'TC-2026-04881', serial: 'EG-4022-WIS', product: 'PA-450 Hub Assembly', customer: 'Toyota Kirloskar', tests: 'Perf + NV + SV', wo: 'WO-2526-10001', issuedBy: 'Kamala S', date: '23 Mar 2026', status: 'Issued' },
+  { certNo: 'TC-2026-04882', serial: 'AB-3018-HSR', product: 'HC-500 Hydraulic Cyl Body', customer: 'Airports Authority of India', tests: 'Perf + NV + SV', wo: 'WO-2526-10006', issuedBy: 'Kamala S', date: '23 Mar 2026', status: 'Draft' },
+  { certNo: 'TC-2026-04879', serial: 'TS-1056-PNE', product: 'BR-75 Aerospace Bracket', customer: 'Bangalore International Airport', tests: 'Perf + SV', wo: 'WO-2526-10003', issuedBy: 'Rajan P', date: '22 Mar 2026', status: 'Issued' },
+  { certNo: 'TC-2026-04878', serial: 'EG-4021-WIS', product: 'PA-450 Hub Assembly', customer: 'Toyota Kirloskar', tests: 'Perf + NV + SV', wo: 'WO-2526-10001', issuedBy: 'Kamala S', date: '22 Mar 2026', status: 'Issued' },
+  { certNo: 'TC-2026-04875', serial: 'DS-2089-AMD', product: 'FT-100 Filter Housing', customer: 'Chennai Metro Rail', tests: 'Perf + SV + Dew Point', wo: 'WO-2526-10008', issuedBy: 'Rajan P', date: '21 Mar 2026', status: 'Issued' },
   { certNo: 'TC-2026-04873', serial: 'VSD-6014-JMP', product: 'VSD-200 Controller', customer: 'Internal', tests: 'Functional + EMC', wo: 'WO-2526-10005', issuedBy: 'Stan K', date: '21 Mar 2026', status: 'Issued' },
 ];
 
@@ -32,7 +32,7 @@ export default function TestCertificate() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 14 }}>
           <div>
             <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: 4 }}>Certificate Preview: TC-2026-04881</h3>
-            <p style={{ fontSize: '.76rem', color: 'var(--text-dim)' }}>EG-4022-WIS -- PA-450 Hub Assembly -- Deere & Company Ltd</p>
+            <p style={{ fontSize: '.76rem', color: 'var(--text-dim)' }}>EG-4022-WIS -- PA-450 Hub Assembly -- Toyota Kirloskar</p>
           </div>
           <div style={{ display: 'flex', gap: 8 }}>
             <button className="btn">Print</button>

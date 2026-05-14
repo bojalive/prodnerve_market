@@ -9,12 +9,12 @@ export default function ShiftHandover() {
   const set = (k, v) => setForm(p => ({ ...p, [k]: v }));
 
   const RECENT_HANDOVERS = [
-    { id: 'SH-3001', shift: 'C to A', date: '23 Mar 06:00', supervisor: 'Mike R', prodStatus: 'On Track', openIssues: 2, safety: 'OK', status: 'Acknowledged' },
-    { id: 'SH-3002', shift: 'B to C', date: '22 Mar 22:00', supervisor: 'Andrew S', prodStatus: 'Delayed', openIssues: 4, safety: 'OK', status: 'Acknowledged' },
-    { id: 'SH-3003', shift: 'A to B', date: '22 Mar 14:00', supervisor: 'Scott M', prodStatus: 'On Track', openIssues: 1, safety: 'OK', status: 'Acknowledged' },
-    { id: 'SH-3004', shift: 'C to A', date: '22 Mar 06:00', supervisor: 'Mike R', prodStatus: 'On Track', openIssues: 3, safety: 'Near Miss', status: 'Acknowledged' },
-    { id: 'SH-3005', shift: 'B to C', date: '21 Mar 22:00', supervisor: 'Andrew S', prodStatus: 'On Track', openIssues: 0, safety: 'OK', status: 'Pending' },
-    { id: 'SH-3006', shift: 'A to B', date: '21 Mar 14:00', supervisor: 'Scott M', prodStatus: 'Delayed', openIssues: 5, safety: 'OK', status: 'Acknowledged' },
+    { id: 'SH-3001', shift: 'C to A', date: '23 Mar 06:00', supervisor: 'Murugan R', prodStatus: 'On Track', openIssues: 2, safety: 'OK', status: 'Acknowledged' },
+    { id: 'SH-3002', shift: 'B to C', date: '22 Mar 22:00', supervisor: 'Annamalai S', prodStatus: 'Delayed', openIssues: 4, safety: 'OK', status: 'Acknowledged' },
+    { id: 'SH-3003', shift: 'A to B', date: '22 Mar 14:00', supervisor: 'Senthil M', prodStatus: 'On Track', openIssues: 1, safety: 'OK', status: 'Acknowledged' },
+    { id: 'SH-3004', shift: 'C to A', date: '22 Mar 06:00', supervisor: 'Murugan R', prodStatus: 'On Track', openIssues: 3, safety: 'Near Miss', status: 'Acknowledged' },
+    { id: 'SH-3005', shift: 'B to C', date: '21 Mar 22:00', supervisor: 'Annamalai S', prodStatus: 'On Track', openIssues: 0, safety: 'OK', status: 'Pending' },
+    { id: 'SH-3006', shift: 'A to B', date: '21 Mar 14:00', supervisor: 'Senthil M', prodStatus: 'Delayed', openIssues: 5, safety: 'OK', status: 'Acknowledged' },
   ];
 
   const STATUS_COLOR = { Acknowledged: 'green', Pending: 'amber' };
@@ -50,8 +50,8 @@ export default function ShiftHandover() {
           <FormField label="Supervisor">
             <select className="form-select" value={form.supervisor} onChange={e => set('supervisor', e.target.value)}>
               <option value="">-- Select --</option>
-              <option>Mike R</option><option>Scott M</option><option>Andrew S</option>
-              <option>Karl V</option><option>Steve P</option>
+              <option>Murugan R</option><option>Senthil M</option><option>Annamalai S</option>
+              <option>Kannan V</option><option>Selvam P</option>
             </select>
           </FormField>
         </div>

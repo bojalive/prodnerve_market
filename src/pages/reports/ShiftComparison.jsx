@@ -17,7 +17,7 @@ export default function ShiftComparison() {
     <>
       <div style={{ marginBottom: 18 }}>
         <h2 style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: -.5 }}>Shift Comparison</h2>
-        <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>Week 12 -- performance comparison across 3 shifts -- Shawano Plant</p>
+        <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>Week 12 -- performance comparison across 3 shifts -- Coimbatore Plant</p>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 14, marginBottom: 18 }}>

@@ -7,7 +7,7 @@ const PRODUCTS = [
   'BR-75 Aerospace Bracket', 'BR-150 Aerospace Bracket', 'BR-300 Aerospace Bracket',
   'VSD-100 Controller', 'VSD-200 Controller',
 ];
-const PLANTS = ['Shawano', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
+const PLANTS = ['Coimbatore', 'Hosur', 'Pune', 'Ahmedabad', 'Jamshedpur'];
 const ROUTINGS = ['RT-CNC-STD (CNC Mill Standard)', 'RT-CNC-HVY (CNC Mill Heavy Duty)', 'RT-TRN-STD (CNC Turning Standard)', 'RT-GRD-STD (Grinding Standard)', 'RT-FIN-INS (Finishing & Inspection)'];
 const UOMS = ['Nos', 'Sets', 'Kits'];
 const PRIORITIES = ['Low', 'Medium', 'High', 'Critical'];

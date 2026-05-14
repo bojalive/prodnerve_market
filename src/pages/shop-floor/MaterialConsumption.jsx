@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
 const CONSUMPTION = [
-  { id: 'MC-7001', wo: 'WO-2526-10001', material: 'EN8 Round Bar 65mm', bomQty: 96, actual: 98, var: '+2.1%', operator: 'Mike R', date: '23 Mar 2026', status: 'OK' },
-  { id: 'MC-7002', wo: 'WO-2526-10003', material: 'CI Casting Body 5HP', bomQty: 120, actual: 120, var: '0.0%', operator: 'Scott M', date: '23 Mar 2026', status: 'OK' },
-  { id: 'MC-7003', wo: 'WO-2526-10006', material: 'SS304 Rotor Blank', bomQty: 16, actual: 18, var: '+12.5%', operator: 'Karl V', date: '23 Mar 2026', status: 'High' },
-  { id: 'MC-7004', wo: 'WO-2526-10008', material: 'Copper Winding Wire 1.2mm', bomQty: 24, actual: 25, var: '+4.2%', operator: 'Steve P', date: '23 Mar 2026', status: 'OK' },
-  { id: 'MC-7005', wo: 'WO-2526-10004', material: 'Gasket Set PA-625', bomQty: 16, actual: 16, var: '0.0%', operator: 'Dan N', date: '22 Mar 2026', status: 'OK' },
-  { id: 'MC-7006', wo: 'WO-2526-10011', material: 'Aluminium Die Cast Cover', bomQty: 36, actual: 38, var: '+5.6%', operator: 'Andrew S', date: '22 Mar 2026', status: 'Warn' },
+  { id: 'MC-7001', wo: 'WO-2526-10001', material: 'EN8 Round Bar 65mm', bomQty: 96, actual: 98, var: '+2.1%', operator: 'Murugan R', date: '23 Mar 2026', status: 'OK' },
+  { id: 'MC-7002', wo: 'WO-2526-10003', material: 'CI Casting Body 5HP', bomQty: 120, actual: 120, var: '0.0%', operator: 'Senthil M', date: '23 Mar 2026', status: 'OK' },
+  { id: 'MC-7003', wo: 'WO-2526-10006', material: 'SS304 Rotor Blank', bomQty: 16, actual: 18, var: '+12.5%', operator: 'Kannan V', date: '23 Mar 2026', status: 'High' },
+  { id: 'MC-7004', wo: 'WO-2526-10008', material: 'Copper Winding Wire 1.2mm', bomQty: 24, actual: 25, var: '+4.2%', operator: 'Selvam P', date: '23 Mar 2026', status: 'OK' },
+  { id: 'MC-7005', wo: 'WO-2526-10004', material: 'Gasket Set PA-625', bomQty: 16, actual: 16, var: '0.0%', operator: 'Durai N', date: '22 Mar 2026', status: 'OK' },
+  { id: 'MC-7006', wo: 'WO-2526-10011', material: 'Aluminium Die Cast Cover', bomQty: 36, actual: 38, var: '+5.6%', operator: 'Annamalai S', date: '22 Mar 2026', status: 'Warn' },
 ];
 
 const STATUS_COLOR = { OK: 'green', Warn: 'amber', High: 'red' };
