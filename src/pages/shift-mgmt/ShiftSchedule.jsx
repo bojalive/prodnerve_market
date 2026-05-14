@@ -33,7 +33,7 @@ export default function ShiftSchedule() {
     <>
       <div style={{ marginBottom: 18 }}>
         <h2 style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: -.5 }}>Shift Schedule</h2>
-        <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>Week 12 -- 23 Mar to 29 Mar 2026 -- Shawano Plant</p>
+        <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>Week 12 -- 23 Mar to 29 Mar 2026 -- Coimbatore Plant</p>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 14, marginBottom: 18 }}>

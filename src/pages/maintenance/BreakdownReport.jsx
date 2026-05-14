@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, FormField, Badge } from '../../components/ui';
 
 const BREAKDOWNS = [
-  { id: 'BD-8001', machine: 'CNC-A06', area: 'CNC Bay 2', fault: 'Spindle bearing seizure', severity: 'Critical', reportedBy: 'Scott M', reportTime: '23 Mar 08:20', techAssigned: 'Greg T', mttr: '2h 25m', rootCause: 'Bearing end of life', status: 'Closed' },
-  { id: 'BD-8002', machine: 'TST-E02', area: 'Testing', fault: 'Hydraulic pump leak', severity: 'Major', reportedBy: 'Steve P', reportTime: '23 Mar 09:10', techAssigned: 'Patrick D', mttr: '--', rootCause: 'Seal degradation', status: 'Open' },
-  { id: 'BD-8003', machine: 'PNT-F01', area: 'Paint Shop', fault: 'Spray gun nozzle clog', severity: 'Minor', reportedBy: 'Dan N', reportTime: '23 Mar 13:00', techAssigned: 'Marcus R', mttr: '0h 40m', rootCause: 'Paint viscosity issue', status: 'Closed' },
-  { id: 'BD-8004', machine: 'GRD-C04', area: 'Grinding', fault: 'Coolant pump failure', severity: 'Major', reportedBy: 'Karl V', reportTime: '22 Mar 14:30', techAssigned: 'Greg T', mttr: '3h 15m', rootCause: 'Motor winding burn', status: 'Closed' },
-  { id: 'BD-8005', machine: 'ASM-D03', area: 'Assembly', fault: 'Conveyor belt slipping', severity: 'Minor', reportedBy: 'Andrew S', reportTime: '22 Mar 10:15', techAssigned: 'Patrick D', mttr: '1h 10m', rootCause: 'Belt tension low', status: 'Closed' },
-  { id: 'BD-8006', machine: 'CNC-A02', area: 'CNC Bay 1', fault: 'ATC arm malfunction', severity: 'Major', reportedBy: 'Scott M', reportTime: '21 Mar 16:45', techAssigned: 'Marcus R', mttr: '4h 20m', rootCause: 'Pneumatic cylinder wear', status: 'Closed' },
+  { id: 'BD-8001', machine: 'CNC-A06', area: 'CNC Bay 2', fault: 'Spindle bearing seizure', severity: 'Critical', reportedBy: 'Saravanan M', reportTime: '23 Mar 08:20', techAssigned: 'Greg T', mttr: '2h 25m', rootCause: 'Bearing end of life', status: 'Closed' },
+  { id: 'BD-8002', machine: 'TST-E02', area: 'Testing', fault: 'Hydraulic pump leak', severity: 'Major', reportedBy: 'Vijay P', reportTime: '23 Mar 09:10', techAssigned: 'Patrick D', mttr: '--', rootCause: 'Seal degradation', status: 'Open' },
+  { id: 'BD-8003', machine: 'PNT-F01', area: 'Paint Shop', fault: 'Spray gun nozzle clog', severity: 'Minor', reportedBy: 'Dinesh N', reportTime: '23 Mar 13:00', techAssigned: 'Marcus R', mttr: '0h 40m', rootCause: 'Paint viscosity issue', status: 'Closed' },
+  { id: 'BD-8004', machine: 'GRD-C04', area: 'Grinding', fault: 'Coolant pump failure', severity: 'Major', reportedBy: 'Karthik V', reportTime: '22 Mar 14:30', techAssigned: 'Greg T', mttr: '3h 15m', rootCause: 'Motor winding burn', status: 'Closed' },
+  { id: 'BD-8005', machine: 'ASM-D03', area: 'Assembly', fault: 'Conveyor belt slipping', severity: 'Minor', reportedBy: 'Anand S', reportTime: '22 Mar 10:15', techAssigned: 'Patrick D', mttr: '1h 10m', rootCause: 'Belt tension low', status: 'Closed' },
+  { id: 'BD-8006', machine: 'CNC-A02', area: 'CNC Bay 1', fault: 'ATC arm malfunction', severity: 'Major', reportedBy: 'Saravanan M', reportTime: '21 Mar 16:45', techAssigned: 'Marcus R', mttr: '4h 20m', rootCause: 'Pneumatic cylinder wear', status: 'Closed' },
 ];
 
 const STATUS_COLOR = { Open: 'red', Closed: 'green', 'In Progress': 'amber' };
