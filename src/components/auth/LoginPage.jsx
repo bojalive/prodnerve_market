@@ -105,7 +105,7 @@ export function LoginPage({ onLogin }) {
             <input
               className="form-input"
               type="email"
-              placeholder="you@company.com"
+              placeholder="you@bannarimills.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               autoComplete="email"

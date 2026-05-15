@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { MI, KpiCard, SectionLabel, DataTable, Badge, FormField, Modal } from '../../components/ui';
 
 const RECENT_ISSUES = [
-  { id: 'MI-2526-10001', wo: 'WO-2526-10001', material: 'EN8 Round Bar 65mm', batch: 'HT-4482', qtyReq: 96, qtyIssued: 96, uom: 'Nos', store: 'RM-A1-03', issuedBy: 'Mike R', receivedBy: 'Scott M', date: '23 Mar 2026', status: 'Issued' },
-  { id: 'MI-2526-10002', wo: 'WO-2526-10003', material: 'CI Casting Body 5HP', batch: 'CST-2289', qtyReq: 120, qtyIssued: 120, uom: 'Nos', store: 'RM-B2-07', issuedBy: 'Patrick R', receivedBy: 'Karl V', date: '23 Mar 2026', status: 'Issued' },
-  { id: 'MI-2526-10003', wo: 'WO-2526-10006', material: 'SS304 Rotor Blank', batch: 'HT-4490', qtyReq: 16, qtyIssued: 16, uom: 'Nos', store: 'RM-A2-01', issuedBy: 'Andrew S', receivedBy: 'Steve P', date: '23 Mar 2026', status: 'Issued' },
-  { id: 'MI-2526-10004', wo: 'WO-2526-10002', material: 'Copper Winding Wire 1.2mm', batch: 'CW-1187', qtyReq: 48, qtyIssued: 45, uom: 'Kg', store: 'RM-C1-02', issuedBy: 'Mike R', receivedBy: 'Dan N', date: '22 Mar 2026', status: 'Partial' },
-  { id: 'MI-2526-10005', wo: 'WO-2526-10008', material: 'SKF 6210-2Z Bearing', batch: 'BRG-7741', qtyReq: 24, qtyIssued: 24, uom: 'Nos', store: 'RM-D1-05', issuedBy: 'Patrick R', receivedBy: 'Scott M', date: '22 Mar 2026', status: 'Issued' },
-  { id: 'MI-2526-10006', wo: 'WO-2526-10004', material: 'Gasket Set PA-625', batch: 'GS-0923', qtyReq: 32, qtyIssued: 32, uom: 'Sets', store: 'RM-A3-09', issuedBy: 'Andrew S', receivedBy: 'Karl V', date: '22 Mar 2026', status: 'Issued' },
-  { id: 'MI-2526-10007', wo: 'WO-2526-10011', material: 'Aluminium Die Cast Cover', batch: 'ADC-3310', qtyReq: 72, qtyIssued: 60, uom: 'Nos', store: 'RM-B1-04', issuedBy: 'Mike R', receivedBy: 'Steve P', date: '21 Mar 2026', status: 'Partial' },
-  { id: 'MI-2526-10008', wo: 'WO-2526-10007', material: 'Epoxy Paint RAL 5015', batch: 'EP-2207', qtyReq: 80, qtyIssued: 80, uom: 'Ltr', store: 'RM-E1-01', issuedBy: 'Patrick R', receivedBy: 'Dan N', date: '21 Mar 2026', status: 'Issued' },
+  { id: 'MI-2526-10001', wo: 'WO-2526-10001', material: 'EN8 Round Bar 65mm', batch: 'HT-4482', qtyReq: 96, qtyIssued: 96, uom: 'Nos', store: 'RM-A1-03', issuedBy: 'Suresh K', receivedBy: 'Saravanan T', date: '23 Mar 2026', status: 'Issued' },
+  { id: 'MI-2526-10002', wo: 'WO-2526-10003', material: 'CI Casting Body 5HP', batch: 'CST-2289', qtyReq: 120, qtyIssued: 120, uom: 'Nos', store: 'RM-B2-07', issuedBy: 'Praveen R', receivedBy: 'Karthik V', date: '23 Mar 2026', status: 'Issued' },
+  { id: 'MI-2526-10003', wo: 'WO-2526-10006', material: 'SS304 Rotor Blank', batch: 'HT-4490', qtyReq: 16, qtyIssued: 16, uom: 'Nos', store: 'RM-A2-01', issuedBy: 'Anand M', receivedBy: 'Vijay R', date: '23 Mar 2026', status: 'Issued' },
+  { id: 'MI-2526-10004', wo: 'WO-2526-10002', material: 'Copper Winding Wire 1.2mm', batch: 'CW-1187', qtyReq: 48, qtyIssued: 45, uom: 'Kg', store: 'RM-C1-02', issuedBy: 'Suresh K', receivedBy: 'Dinesh N', date: '22 Mar 2026', status: 'Partial' },
+  { id: 'MI-2526-10005', wo: 'WO-2526-10008', material: 'SKF 6210-2Z Bearing', batch: 'BRG-7741', qtyReq: 24, qtyIssued: 24, uom: 'Nos', store: 'RM-D1-05', issuedBy: 'Praveen R', receivedBy: 'Saravanan T', date: '22 Mar 2026', status: 'Issued' },
+  { id: 'MI-2526-10006', wo: 'WO-2526-10004', material: 'Gasket Set GT-C300', batch: 'GS-0923', qtyReq: 32, qtyIssued: 32, uom: 'Sets', store: 'RM-A3-09', issuedBy: 'Anand M', receivedBy: 'Karthik V', date: '22 Mar 2026', status: 'Issued' },
+  { id: 'MI-2526-10007', wo: 'WO-2526-10011', material: 'Aluminium Die Cast Cover', batch: 'ADC-3310', qtyReq: 72, qtyIssued: 60, uom: 'Nos', store: 'RM-B1-04', issuedBy: 'Suresh K', receivedBy: 'Vijay R', date: '21 Mar 2026', status: 'Partial' },
+  { id: 'MI-2526-10008', wo: 'WO-2526-10007', material: 'Epoxy Paint RAL 5015', batch: 'EP-2207', qtyReq: 80, qtyIssued: 80, uom: 'Ltr', store: 'RM-E1-01', issuedBy: 'Praveen R', receivedBy: 'Dinesh N', date: '21 Mar 2026', status: 'Issued' },
 ];
 
 const STATUS_COLOR = { Issued: 'green', Partial: 'amber', Pending: 'red' };
@@ -68,10 +68,10 @@ export default function MaterialIssue() {
           </FormField>
           <FormField label="Store Location"><input className="input" placeholder="RM-XX-XX" /></FormField>
           <FormField label="Issued By">
-            <select className="input"><option>Mike R</option><option>Patrick R</option><option>Andrew S</option></select>
+            <select className="input"><option>Suresh K</option><option>Praveen R</option><option>Anand M</option></select>
           </FormField>
           <FormField label="Received By">
-            <select className="input"><option>Scott M</option><option>Karl V</option><option>Steve P</option><option>Dan N</option></select>
+            <select className="input"><option>Saravanan T</option><option>Karthik V</option><option>Vijay R</option><option>Dinesh N</option></select>
           </FormField>
         </div>
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8, marginTop: 18 }}>

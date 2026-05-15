@@ -6,18 +6,18 @@ const STATUS_COLORS = {
 };
 
 const WORK_ORDERS = [
-  { wo: 'WO-2526-10001', product: 'PA-450 Hub Assembly', customer: 'Deere & Company Ltd', qty: 48, plant: 'Shawano', start: '17 Mar 2026', end: '28 Mar 2026', priority: 'High', status: 'In Progress' },
-  { wo: 'WO-2526-10002', product: 'HC-250 Hydraulic Cyl Body', customer: 'Sun Pharma', qty: 24, plant: 'Pune', start: '18 Mar 2026', end: '30 Mar 2026', priority: 'Critical', status: 'Released' },
-  { wo: 'WO-2526-10003', product: 'BR-75 Aerospace Bracket', customer: 'Kohler Co', qty: 120, plant: 'Jamshedpur', start: '15 Mar 2026', end: '25 Mar 2026', priority: 'Medium', status: 'In Progress' },
-  { wo: 'WO-2526-10004', product: 'PA-625 Hub Assembly', customer: 'Larsen & Toubro', qty: 16, plant: 'Hosur', start: '10 Mar 2026', end: '22 Mar 2026', priority: 'High', status: 'Completed' },
+  { wo: 'WO-2526-10001', product: 'GT-C200 Comber', customer: 'Trident Limited', qty: 48, plant: 'Coimbatore', start: '17 Mar 2026', end: '28 Mar 2026', priority: 'High', status: 'In Progress' },
+  { wo: 'WO-2526-10002', product: 'GT-LF700 Lap Former', customer: 'Sun Pharma', qty: 24, plant: 'Pune', start: '18 Mar 2026', end: '30 Mar 2026', priority: 'Critical', status: 'Released' },
+  { wo: 'WO-2526-10003', product: 'GT-RF400 Ring Frame', customer: 'Kohler Co', qty: 120, plant: 'Jamshedpur', start: '15 Mar 2026', end: '25 Mar 2026', priority: 'Medium', status: 'In Progress' },
+  { wo: 'WO-2526-10004', product: 'GT-C300 Comber', customer: 'Larsen & Toubro', qty: 16, plant: 'Hosur', start: '10 Mar 2026', end: '22 Mar 2026', priority: 'High', status: 'Completed' },
   { wo: 'WO-2526-10005', product: 'VSD-200 Controller', customer: 'Internal', qty: 200, plant: 'Ahmedabad', start: '20 Mar 2026', end: '05 Apr 2026', priority: 'Low', status: 'Created' },
-  { wo: 'WO-2526-10006', product: 'HC-500 Hydraulic Cyl Body', customer: 'Caterpillar Inc', qty: 8, plant: 'Shawano', start: '12 Mar 2026', end: '20 Mar 2026', priority: 'Critical', status: 'In Progress' },
-  { wo: 'WO-2526-10007', product: 'BR-150 Aerospace Bracket', customer: 'Navistar', qty: 80, plant: 'Hosur', start: '14 Mar 2026', end: '24 Mar 2026', priority: 'Medium', status: 'Released' },
-  { wo: 'WO-2526-10008', product: 'PA-880 Hub Assembly', customer: 'Honeywell Inc', qty: 12, plant: 'Pune', start: '16 Mar 2026', end: '28 Mar 2026', priority: 'High', status: 'In Progress' },
+  { wo: 'WO-2526-10006', product: 'GT-SF200 Speed Frame', customer: 'Vardhman Textiles', qty: 8, plant: 'Coimbatore', start: '12 Mar 2026', end: '20 Mar 2026', priority: 'Critical', status: 'In Progress' },
+  { wo: 'WO-2526-10007', product: 'GT-RF450 Ring Frame', customer: 'Arvind Mills', qty: 80, plant: 'Hosur', start: '14 Mar 2026', end: '24 Mar 2026', priority: 'Medium', status: 'Released' },
+  { wo: 'WO-2526-10008', product: 'GT-DF500 Draw Frame', customer: 'Honeywell Inc', qty: 12, plant: 'Pune', start: '16 Mar 2026', end: '28 Mar 2026', priority: 'High', status: 'In Progress' },
   { wo: 'WO-2526-10009', product: 'VSD-100 Controller', customer: 'Internal', qty: 350, plant: 'Ahmedabad', start: '19 Mar 2026', end: '02 Apr 2026', priority: 'Medium', status: 'Created' },
-  { wo: 'WO-2526-10010', product: 'BR-300 Aerospace Bracket', customer: 'Bharat Forge', qty: 60, plant: 'Jamshedpur', start: '11 Mar 2026', end: '21 Mar 2026', priority: 'High', status: 'Closed' },
-  { wo: 'WO-2526-10011', product: 'HC-100 Hydraulic Cyl Body', customer: 'Cipla Ltd', qty: 36, plant: 'Shawano', start: '13 Mar 2026', end: '26 Mar 2026', priority: 'Medium', status: 'In Progress' },
-  { wo: 'WO-2526-10012', product: 'PA-225 Hub Assembly', customer: 'PACCAR & PACCAR', qty: 64, plant: 'Hosur', start: '21 Mar 2026', end: '04 Apr 2026', priority: 'Low', status: 'Created' },
+  { wo: 'WO-2526-10010', product: 'GT-OE300 Open-End Spinner', customer: 'Bharat Forge', qty: 60, plant: 'Jamshedpur', start: '11 Mar 2026', end: '21 Mar 2026', priority: 'High', status: 'Closed' },
+  { wo: 'WO-2526-10011', product: 'GT-LF600 Lap Former', customer: 'Cipla Ltd', qty: 36, plant: 'Coimbatore', start: '13 Mar 2026', end: '26 Mar 2026', priority: 'Medium', status: 'In Progress' },
+  { wo: 'WO-2526-10012', product: 'GT-C100 Comber', customer: 'Alok Industries & Alok Industries', qty: 64, plant: 'Hosur', start: '21 Mar 2026', end: '04 Apr 2026', priority: 'Low', status: 'Created' },
 ];
 
 export default function WorkOrderList({ navigate }) {
@@ -37,7 +37,7 @@ export default function WorkOrderList({ navigate }) {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 18 }}>
         <div>
           <h2 style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: -.5 }}>Production Orders</h2>
-          <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>All plants -- Shawano, Hosur, Pune, Ahmedabad, Jamshedpur</p>
+          <p style={{ color: 'var(--text-dim)', fontSize: '.78rem', marginTop: 3 }}>All plants -- Coimbatore, Hosur, Pune, Ahmedabad, Jamshedpur</p>
         </div>
         <button className="btn btn-primary" onClick={() => navigate && navigate('production-orders', 'create')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
           <MI size={16}>add</MI>New Work Order

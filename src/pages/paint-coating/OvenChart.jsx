@@ -2,14 +2,14 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const OVEN_DATA = [
-  { batch: 'OV-2026-0412', wo: 'WO-2526-10004', product: 'PA-625', qty: 8, setTemp: 180, zone1: 178, zone2: 181, zone3: 179, bakeDur: '25 min', actualDur: '26 min', startTime: '23 Mar 09:00', endTime: '23 Mar 09:26', operator: 'D. Vignesh', status: 'Pass' },
-  { batch: 'OV-2026-0413', wo: 'WO-2526-10007', product: 'BR-150', qty: 20, setTemp: 180, zone1: 180, zone2: 182, zone3: 178, bakeDur: '25 min', actualDur: '25 min', startTime: '23 Mar 10:00', endTime: '23 Mar 10:25', operator: 'D. Vignesh', status: 'Pass' },
-  { batch: 'OV-2026-0414', wo: 'WO-2526-10001', product: 'PA-450', qty: 12, setTemp: 180, zone1: 176, zone2: 184, zone3: 180, bakeDur: '25 min', actualDur: '27 min', startTime: '23 Mar 11:00', endTime: '23 Mar 11:27', operator: 'R. Hansen', status: 'Pass' },
-  { batch: 'OV-2026-0415', wo: 'WO-2526-10006', product: 'HC-500', qty: 4, setTemp: 160, zone1: 158, zone2: 162, zone3: 161, bakeDur: '20 min', actualDur: '20 min', startTime: '23 Mar 12:00', endTime: '23 Mar 12:20', operator: 'R. Hansen', status: 'Pass' },
-  { batch: 'OV-2026-0416', wo: 'WO-2526-10011', product: 'HC-100', qty: 10, setTemp: 160, zone1: 155, zone2: 168, zone3: 159, bakeDur: '20 min', actualDur: '22 min', startTime: '23 Mar 13:00', endTime: '23 Mar 13:22', operator: 'D. Vignesh', status: 'Warn' },
-  { batch: 'OV-2026-0411', wo: 'WO-2526-10003', product: 'BR-75', qty: 30, setTemp: 180, zone1: 179, zone2: 180, zone3: 181, bakeDur: '25 min', actualDur: '25 min', startTime: '22 Mar 14:00', endTime: '22 Mar 14:25', operator: 'D. Vignesh', status: 'Pass' },
-  { batch: 'OV-2026-0410', wo: 'WO-2526-10008', product: 'PA-880', qty: 6, setTemp: 180, zone1: 182, zone2: 179, zone3: 180, bakeDur: '25 min', actualDur: '26 min', startTime: '22 Mar 11:00', endTime: '22 Mar 11:26', operator: 'R. Hansen', status: 'Pass' },
-  { batch: 'OV-2026-0409', wo: 'WO-2526-10002', product: 'HC-250', qty: 8, setTemp: 160, zone1: 161, zone2: 159, zone3: 160, bakeDur: '20 min', actualDur: '20 min', startTime: '22 Mar 09:00', endTime: '22 Mar 09:20', operator: 'D. Vignesh', status: 'Pass' },
+  { batch: 'OV-2026-0412', wo: 'WO-2526-10004', product: 'GT-C300', qty: 8, setTemp: 180, zone1: 178, zone2: 181, zone3: 179, bakeDur: '25 min', actualDur: '26 min', startTime: '23 Mar 09:00', endTime: '23 Mar 09:26', operator: 'D. Vignesh', status: 'Pass' },
+  { batch: 'OV-2026-0413', wo: 'WO-2526-10007', product: 'GT-RF450', qty: 20, setTemp: 180, zone1: 180, zone2: 182, zone3: 178, bakeDur: '25 min', actualDur: '25 min', startTime: '23 Mar 10:00', endTime: '23 Mar 10:25', operator: 'D. Vignesh', status: 'Pass' },
+  { batch: 'OV-2026-0414', wo: 'WO-2526-10001', product: 'GT-C200', qty: 12, setTemp: 180, zone1: 176, zone2: 184, zone3: 180, bakeDur: '25 min', actualDur: '27 min', startTime: '23 Mar 11:00', endTime: '23 Mar 11:27', operator: 'R. Hansen', status: 'Pass' },
+  { batch: 'OV-2026-0415', wo: 'WO-2526-10006', product: 'GT-SF200', qty: 4, setTemp: 160, zone1: 158, zone2: 162, zone3: 161, bakeDur: '20 min', actualDur: '20 min', startTime: '23 Mar 12:00', endTime: '23 Mar 12:20', operator: 'R. Hansen', status: 'Pass' },
+  { batch: 'OV-2026-0416', wo: 'WO-2526-10011', product: 'GT-LF600', qty: 10, setTemp: 160, zone1: 155, zone2: 168, zone3: 159, bakeDur: '20 min', actualDur: '22 min', startTime: '23 Mar 13:00', endTime: '23 Mar 13:22', operator: 'D. Vignesh', status: 'Warn' },
+  { batch: 'OV-2026-0411', wo: 'WO-2526-10003', product: 'GT-RF400', qty: 30, setTemp: 180, zone1: 179, zone2: 180, zone3: 181, bakeDur: '25 min', actualDur: '25 min', startTime: '22 Mar 14:00', endTime: '22 Mar 14:25', operator: 'D. Vignesh', status: 'Pass' },
+  { batch: 'OV-2026-0410', wo: 'WO-2526-10008', product: 'GT-DF500', qty: 6, setTemp: 180, zone1: 182, zone2: 179, zone3: 180, bakeDur: '25 min', actualDur: '26 min', startTime: '22 Mar 11:00', endTime: '22 Mar 11:26', operator: 'R. Hansen', status: 'Pass' },
+  { batch: 'OV-2026-0409', wo: 'WO-2526-10002', product: 'GT-LF700', qty: 8, setTemp: 160, zone1: 161, zone2: 159, zone3: 160, bakeDur: '20 min', actualDur: '20 min', startTime: '22 Mar 09:00', endTime: '22 Mar 09:20', operator: 'D. Vignesh', status: 'Pass' },
 ];
 
 const STATUS_COLOR = { Pass: 'green', Warn: 'amber', Fail: 'red' };

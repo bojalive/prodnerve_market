@@ -2,15 +2,15 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const GENEALOGY_DATA = [
-  { serial: 'EG-4022-WIS', product: 'PA-450', component: 'Male Rotor', partNo: 'EG22-ROT-M', batch: 'HT-4482', heatNo: 'EN8-2026-442', supplier: 'In-house CNC', mtc: 'MTC-4482', incomingQC: 'Pass', date: '18 Mar 2026' },
-  { serial: 'EG-4022-WIS', product: 'PA-450', component: 'Female Rotor', partNo: 'EG22-ROT-F', batch: 'HT-4483', heatNo: 'EN8-2026-443', supplier: 'In-house CNC', mtc: 'MTC-4483', incomingQC: 'Pass', date: '18 Mar 2026' },
-  { serial: 'EG-4022-WIS', product: 'PA-450', component: 'Housing Body', partNo: 'EG22-HSG-01', batch: 'CST-2289', heatNo: 'FG260-2026-89', supplier: 'Samam Castings', mtc: 'MTC-2289', incomingQC: 'Pass', date: '15 Mar 2026' },
-  { serial: 'EG-4022-WIS', product: 'PA-450', component: 'SKF 6210-2Z Bearing', partNo: 'BRG-6210-2Z', batch: 'BRG-7741', heatNo: '--', supplier: 'SKF India', mtc: '--', incomingQC: 'Pass', date: '12 Mar 2026' },
-  { serial: 'EG-4022-WIS', product: 'PA-450', component: 'Shaft Seal Kit', partNo: 'EG22-SEAL-01', batch: 'SK-1128', heatNo: '--', supplier: 'Freudenberg India', mtc: '--', incomingQC: 'Pass', date: '14 Mar 2026' },
-  { serial: 'AB-3018-HSR', product: 'HC-500', component: 'Scroll Element', partNo: 'AB30-SCR-01', batch: 'HT-4490', heatNo: 'SS304-2026-90', supplier: 'In-house CNC', mtc: 'MTC-4490', incomingQC: 'Pass', date: '16 Mar 2026' },
-  { serial: 'AB-3018-HSR', product: 'HC-500', component: 'Motor Assembly', partNo: 'AB30-MOT-01', batch: 'MOT-8842', heatNo: '--', supplier: 'Siemens India', mtc: '--', incomingQC: 'Pass', date: '10 Mar 2026' },
-  { serial: 'TS-1055-PNE', product: 'BR-75', component: 'Piston Kit', partNo: 'TS5-PST-01', batch: 'PK-3321', heatNo: 'EN8-2026-321', supplier: 'In-house CNC', mtc: 'MTC-3321', incomingQC: 'Pass', date: '14 Mar 2026' },
-  { serial: 'TS-1055-PNE', product: 'BR-75', component: 'Connecting Rod', partNo: 'TS5-CON-01', batch: 'CR-2204', heatNo: 'EN24-2026-04', supplier: 'Bharat Forge', mtc: 'MTC-2204', incomingQC: 'Pass', date: '12 Mar 2026' },
+  { serial: 'EG-4022-WIS', product: 'GT-C200', component: 'Male Rotor', partNo: 'EG22-ROT-M', batch: 'HT-4482', heatNo: 'EN8-2026-442', supplier: 'In-house CNC', mtc: 'MTC-4482', incomingQC: 'Pass', date: '18 Mar 2026' },
+  { serial: 'EG-4022-WIS', product: 'GT-C200', component: 'Female Rotor', partNo: 'EG22-ROT-F', batch: 'HT-4483', heatNo: 'EN8-2026-443', supplier: 'In-house CNC', mtc: 'MTC-4483', incomingQC: 'Pass', date: '18 Mar 2026' },
+  { serial: 'EG-4022-WIS', product: 'GT-C200', component: 'Housing Body', partNo: 'EG22-HSG-01', batch: 'CST-2289', heatNo: 'FG260-2026-89', supplier: 'Samam Castings', mtc: 'MTC-2289', incomingQC: 'Pass', date: '15 Mar 2026' },
+  { serial: 'EG-4022-WIS', product: 'GT-C200', component: 'SKF 6210-2Z Bearing', partNo: 'BRG-6210-2Z', batch: 'BRG-7741', heatNo: '--', supplier: 'SKF India', mtc: '--', incomingQC: 'Pass', date: '12 Mar 2026' },
+  { serial: 'EG-4022-WIS', product: 'GT-C200', component: 'Shaft Seal Kit', partNo: 'EG22-SEAL-01', batch: 'SK-1128', heatNo: '--', supplier: 'Freudenberg India', mtc: '--', incomingQC: 'Pass', date: '14 Mar 2026' },
+  { serial: 'AB-3018-HSR', product: 'GT-SF200', component: 'Scroll Element', partNo: 'AB30-SCR-01', batch: 'HT-4490', heatNo: 'SS304-2026-90', supplier: 'In-house CNC', mtc: 'MTC-4490', incomingQC: 'Pass', date: '16 Mar 2026' },
+  { serial: 'AB-3018-HSR', product: 'GT-SF200', component: 'Motor Assembly', partNo: 'AB30-MOT-01', batch: 'MOT-8842', heatNo: '--', supplier: 'Siemens India', mtc: '--', incomingQC: 'Pass', date: '10 Mar 2026' },
+  { serial: 'TS-1055-PNE', product: 'GT-RF400', component: 'Piston Kit', partNo: 'TS5-PST-01', batch: 'PK-3321', heatNo: 'EN8-2026-321', supplier: 'In-house CNC', mtc: 'MTC-3321', incomingQC: 'Pass', date: '14 Mar 2026' },
+  { serial: 'TS-1055-PNE', product: 'GT-RF400', component: 'Connecting Rod', partNo: 'TS5-CON-01', batch: 'CR-2204', heatNo: 'EN24-2026-04', supplier: 'Bharat Forge', mtc: 'MTC-2204', incomingQC: 'Pass', date: '12 Mar 2026' },
   { serial: 'VSD-6014-JMP', product: 'VSD-200', component: 'VFD Controller', partNo: 'VSD200-VFD', batch: 'VFD-0548', heatNo: '--', supplier: 'ABB India', mtc: '--', incomingQC: 'Pass', date: '11 Mar 2026' },
 ];
 

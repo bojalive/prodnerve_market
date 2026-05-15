@@ -2,7 +2,7 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const PLANTS = [
-  { code: 'CBE', name: 'Shawano', address: 'SIPCOT Industrial Park, Shawano, TN', area: '45,000 sq ft', lines: 8, headcount: 79, products: 'EG, AB Series', gst: '33AABXX1234X1Z5', established: '2008', status: 'Active' },
+  { code: 'CBE', name: 'Coimbatore', address: 'Ganapathy Industrial Estate, Coimbatore, TN', area: '45,000 sq ft', lines: 8, headcount: 79, products: 'GT-C, GT-DF Series', gst: '33AABXX1234X1Z5', established: '2008', status: 'Active' },
   { code: 'HSR', name: 'Hosur', address: 'KIADB Industrial Area, Hosur, TN', area: '32,000 sq ft', lines: 6, headcount: 64, products: 'EG, TS Series', gst: '33AABXX1234X2Z4', established: '2012', status: 'Active' },
   { code: 'PNE', name: 'Pune', address: 'Chakan MIDC, Pune, MH', area: '28,000 sq ft', lines: 5, headcount: 52, products: 'AB, EG Series', gst: '27AABXX1234X3Z3', established: '2015', status: 'Active' },
   { code: 'AMD', name: 'Ahmedabad', address: 'Sanand GIDC, Ahmedabad, GJ', area: '20,000 sq ft', lines: 4, headcount: 45, products: 'VSD, DS Series', gst: '24AABXX1234X4Z2', established: '2018', status: 'Active' },

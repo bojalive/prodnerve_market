@@ -2,16 +2,16 @@ import React from 'react';
 import { KpiCard, SectionLabel, DataTable, Badge } from '../../components/ui';
 
 const CYCLE_DATA = [
-  { machine: 'CNC-A01', program: 'O1001', part: 'PA-450 Rotor OP10', stdCT: '8m 42s', actCT: '8m 55s', var: '+2.5%', parts: 18, uptime: 94, status: 'OK' },
-  { machine: 'CNC-A01', program: 'O1002', part: 'PA-450 Rotor OP20', stdCT: '6m 18s', actCT: '6m 22s', var: '+1.1%', parts: 16, uptime: 92, status: 'OK' },
-  { machine: 'CNC-A02', program: 'O2001', part: 'BR-75 Body OP10', stdCT: '4m 55s', actCT: '5m 18s', var: '+7.8%', parts: 42, uptime: 88, status: 'Warn' },
-  { machine: 'CNC-A03', program: 'O3001', part: 'HC-500 Stator OP10', stdCT: '12m 05s', actCT: '12m 10s', var: '+0.7%', parts: 8, uptime: 96, status: 'OK' },
-  { machine: 'CNC-A05', program: 'O4001', part: 'PA-880 Shaft OP10', stdCT: '9m 48s', actCT: '10m 32s', var: '+7.5%', parts: 12, uptime: 85, status: 'Warn' },
-  { machine: 'VMC-B01', program: 'O2002', part: 'BR-75 Body OP20', stdCT: '7m 30s', actCT: '7m 35s', var: '+1.1%', parts: 24, uptime: 91, status: 'OK' },
-  { machine: 'VMC-B01', program: 'O3002', part: 'PA-625 Housing OP10', stdCT: '14m 22s', actCT: '14m 28s', var: '+0.7%', parts: 6, uptime: 93, status: 'OK' },
-  { machine: 'VMC-B02', program: 'O3002', part: 'PA-625 Housing OP20', stdCT: '11m 15s', actCT: '12m 08s', var: '+7.9%', parts: 6, uptime: 82, status: 'Warn' },
-  { machine: 'GRD-C01', program: 'G1001', part: 'PA-450 Rotor Grind', stdCT: '5m 20s', actCT: '5m 25s', var: '+1.6%', parts: 14, uptime: 90, status: 'OK' },
-  { machine: 'GRD-C02', program: 'G2001', part: 'BR-75 Body Grind', stdCT: '3m 45s', actCT: '3m 52s', var: '+3.1%', parts: 30, uptime: 89, status: 'OK' },
+  { machine: 'CNC-A01', program: 'O1001', part: 'GT-C200 Rotor OP10', stdCT: '8m 42s', actCT: '8m 55s', var: '+2.5%', parts: 18, uptime: 94, status: 'OK' },
+  { machine: 'CNC-A01', program: 'O1002', part: 'GT-C200 Rotor OP20', stdCT: '6m 18s', actCT: '6m 22s', var: '+1.1%', parts: 16, uptime: 92, status: 'OK' },
+  { machine: 'CNC-A02', program: 'O2001', part: 'GT-RF400 Body OP10', stdCT: '4m 55s', actCT: '5m 18s', var: '+7.8%', parts: 42, uptime: 88, status: 'Warn' },
+  { machine: 'CNC-A03', program: 'O3001', part: 'GT-SF200 Stator OP10', stdCT: '12m 05s', actCT: '12m 10s', var: '+0.7%', parts: 8, uptime: 96, status: 'OK' },
+  { machine: 'CNC-A05', program: 'O4001', part: 'GT-DF500 Shaft OP10', stdCT: '9m 48s', actCT: '10m 32s', var: '+7.5%', parts: 12, uptime: 85, status: 'Warn' },
+  { machine: 'VMC-B01', program: 'O2002', part: 'GT-RF400 Body OP20', stdCT: '7m 30s', actCT: '7m 35s', var: '+1.1%', parts: 24, uptime: 91, status: 'OK' },
+  { machine: 'VMC-B01', program: 'O3002', part: 'GT-C300 Housing OP10', stdCT: '14m 22s', actCT: '14m 28s', var: '+0.7%', parts: 6, uptime: 93, status: 'OK' },
+  { machine: 'VMC-B02', program: 'O3002', part: 'GT-C300 Housing OP20', stdCT: '11m 15s', actCT: '12m 08s', var: '+7.9%', parts: 6, uptime: 82, status: 'Warn' },
+  { machine: 'GRD-C01', program: 'G1001', part: 'GT-C200 Rotor Grind', stdCT: '5m 20s', actCT: '5m 25s', var: '+1.6%', parts: 14, uptime: 90, status: 'OK' },
+  { machine: 'GRD-C02', program: 'G2001', part: 'GT-RF400 Body Grind', stdCT: '3m 45s', actCT: '3m 52s', var: '+3.1%', parts: 30, uptime: 89, status: 'OK' },
 ];
 
 const STATUS_COLOR = { OK: 'green', Warn: 'amber', Alert: 'red' };
