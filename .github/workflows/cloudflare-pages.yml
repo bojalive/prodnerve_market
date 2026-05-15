@@ -15,37 +15,18 @@ jobs:
         run: |
           SLUG="${GITHUB_REF_NAME#deploys-}"
           echo "slug=$SLUG" >> $GITHUB_OUTPUT
-      - name: Create Nerve Center project
-        run: npx wrangler@latest pages project create "${{ steps.slug.outputs.slug }}-nervecenter" --production-branch main 2>/dev/null || true
+      - name: Create NerveCenter project
+        continue-on-error: true
+        run: |
+          curl -s -X POST "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "{\"name\":\"${{ steps.slug.outputs.slug }}-nervecenter\",\"production_branch\":\"main\"}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Deploy Nerve Center
+      - name: Deploy NerveCenter
         run: npx wrangler@latest pages deploy dist-nervecenter --project-name "${{ steps.slug.outputs.slug }}-nervecenter" --branch main
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Create QSuite project
-        run: |
-          [ -d dist-qsuite ] && npx wrangler@latest pages project create "${{ steps.slug.outputs.slug }}-qsuite" --production-branch main 2>/dev/null || true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Deploy QSuite
-        run: |
-          [ -d dist-qsuite ] && npx wrangler@latest pages deploy dist-qsuite --project-name "${{ steps.slug.outputs.slug }}-qsuite" --branch main || echo "skip"
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Create PSuite project
-        run: |
-          [ -d dist-psuite ] && npx wrangler@latest pages project create "${{ steps.slug.outputs.slug }}-psuite" --production-branch main 2>/dev/null || true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Deploy PSuite
-        run: |
-          [ -d dist-psuite ] && npx wrangler@latest pages deploy dist-psuite --project-name "${{ steps.slug.outputs.slug }}-psuite" --branch main || echo "skip"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
